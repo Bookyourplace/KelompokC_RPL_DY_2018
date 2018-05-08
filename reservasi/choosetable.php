@@ -23,8 +23,8 @@
 			border-collapse:collapse;
 			font-size:18px;
 			font-family:Arial;
-			background:linear-gradient(top, #A6FC3C 0%, #A6FC3C 100%);
-			background:-webkit-linear-gradient(top, #A6FC3C 0%, #A6FC3C 100%);
+			background:linear-gradient(top, #696773 0%, #696773 100%);
+			background:-webkit-linear-gradient(top, #696773 0%, #696773 100%);
 		}
 		.tabel td:hover{
 			background:orange;
@@ -36,7 +36,7 @@
 </head>
 <body>
 
-asdadasd
+
 	<!-- Header -->
 		<?php include '../includes/user/header.php'?>
 		<?php include '../includes/user/sidebar.php'?>
