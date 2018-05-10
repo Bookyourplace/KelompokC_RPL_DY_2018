@@ -1,7 +1,10 @@
 <?php
-  session_start();
+  //session_start();
+  include '../konfig/cek_belum_login.php';
   include "../konfig/config.php";
+ 
 
+  // jika ada post submit ada
   if(isset($_POST['submit'])){
 	$_SESSION['book_table'] = $_POST; // masukkan data post dari user ke dalam session book table
 	header('Location: ' . $config['site_url'] . 'reservasi/choosetable.php'); // redirect ke halaman choostable
@@ -31,7 +34,6 @@
 			Reservation
 		</h2>
 	</section>
-
 
 	<!-- Reservation -->
 	<section class="section-reservation bg1-pattern p-t-100 p-b-113">
@@ -68,7 +70,7 @@
 									Time
 								</span>
 
-								<div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-20">
+								<div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
 									<!-- Select2 -->
 									<select class="selection-1" name="time">
 										<option>10:00</option>
@@ -111,8 +113,7 @@
 								</div>
 							</div>
 						</div>
-
-  								  
+	  
 						<!--</div>-->
 
 
