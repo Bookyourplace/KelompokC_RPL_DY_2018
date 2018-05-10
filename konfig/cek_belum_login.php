@@ -2,8 +2,9 @@
     session_start();
 
     if(!isset($_SESSION['nama_user'])){
-        header('Location: '.$config['site_url'] . 'auth/login.php');
+        header('Location: '.$config['site_url'] . '../auth/login.php');
     }
+
 
     // ini sengaja abang buat jadi 2 file antara cek login sama cek belum login
     // karena kebetulan kalau cek udah login di halaman2 yang akan kita pasang itu ngga perlu cek belum login
