@@ -274,11 +274,7 @@
 			<div class="slick3">
 				<div class="item-slick3 item1-slick3">
 					<div class="wrap-content-slide3 p-b-50 p-t-50">
-						<div class="container">
-							<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
-								<img src="<?php echo $config['site_url']?>assets/users/images/avatar-01.jpg" alt="IGM-AVATAR">
-							</div>
-
+						<div class="container">				
 							<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
 								<p class="t-center txt12 size15 m-l-r-auto">
 									“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”
@@ -295,6 +291,7 @@
 								<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
 									Marie Simmons ˗ New York
 								</div>
+								<a style= "center"; class="btn3 flex-c-m size18 txt11 trans-0-4 m-10" href="<?php echo $config['site_url'] ?>review/review.php" >Write your review</a>
 							</div>
 						</div>
 					</div>
@@ -303,10 +300,6 @@
 				<div class="item-slick3 item2-slick3">
 					<div class="wrap-content-slide3 p-b-50 p-t-50">
 						<div class="container">
-							<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
-								<img src="<?php echo $config['site_url']?>assets/users/images/avatar-04.jpg" alt="IGM-AVATAR">
-							</div>
-
 							<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
 								<p class="t-center txt12 size15 m-l-r-auto">
 									“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”
@@ -323,6 +316,7 @@
 								<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
 									Marie Simmons ˗ New York
 								</div>
+								<a style= "center"; class="btn3 flex-c-m size18 txt11 trans-0-4 m-10" href="<?php echo $config['site_url'] ?>review/review.php" >Write your review</a>
 							</div>
 						</div>
 					</div>
@@ -331,10 +325,6 @@
 				<div class="item-slick3 item3-slick3">
 					<div class="wrap-content-slide3 p-b-50 p-t-50">
 						<div class="container">
-							<div class="pic-review size14 bo4 wrap-cir-pic m-l-r-auto animated visible-false" data-appear="zoomIn">
-								<img src="<?php echo $config['site_url']?>assets/users/images/avatar-05.jpg" alt="IGM-AVATAR">
-							</div>
-
 							<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
 								<p class="t-center txt12 size15 m-l-r-auto">
 									“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”
@@ -351,6 +341,7 @@
 								<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
 									Marie Simmons ˗ New York
 								</div>
+								<a style= "center"; class="btn3 flex-c-m size18 txt11 trans-0-4 m-10" href="<?php echo $config['site_url'] ?>review/review.php" >Write your review</a>
 							</div>
 						</div>
 					</div>

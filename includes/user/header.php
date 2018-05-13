@@ -14,6 +14,7 @@
 					<div class="wrap_menu p-l-45 p-l-0-xl">
 						<nav class="menu">
 							<ul class="main_menu">
+							
 								<li>
 									<a href="<?php echo $config['site_url'] ?>index.php">Home</a>
 								</li>
@@ -31,7 +32,7 @@
 								</li>
 
 								<li>
-									<a href="<?php echo $config['site_url'] ?>auth/register.php">Register</a>
+									<a href="<?php echo $config['site_url'] ?>review/review.php">Review</a>
 								</li>
 
 								<li>
