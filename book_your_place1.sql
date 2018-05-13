@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 09 Mei 2018 pada 05.26
+-- Generation Time: 13 Mei 2018 pada 04.42
 -- Versi Server: 10.1.13-MariaDB
 -- PHP Version: 7.0.6
 
@@ -29,9 +29,26 @@ SET time_zone = "+00:00";
 CREATE TABLE `book` (
   `id_book` int(11) NOT NULL,
   `id_meja` int(2) DEFAULT NULL,
-  `id_pesanan` int(6) DEFAULT NULL,
-  `people` int(2) NOT NULL
+  `id_pesanan` int(6) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `book`
+--
+
+INSERT INTO `book` (`id_book`, `id_meja`, `id_pesanan`) VALUES
+(6, 1, 28),
+(7, 2, 28),
+(8, 1, 29),
+(9, 2, 29),
+(10, 1, 30),
+(11, 2, 31),
+(12, 1, 32),
+(13, 2, 33),
+(14, 1, 35),
+(16, 4, 37),
+(18, 3, 38),
+(20, 19, 40);
 
 -- --------------------------------------------------------
 
@@ -86,6 +103,52 @@ CREATE TABLE `meja` (
   `id_meja` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `meja`
+--
+
+INSERT INTO `meja` (`id_meja`) VALUES
+(1),
+(2),
+(3),
+(4),
+(5),
+(6),
+(7),
+(8),
+(9),
+(10),
+(11),
+(12),
+(13),
+(14),
+(15),
+(16),
+(17),
+(18),
+(19),
+(20),
+(21),
+(22),
+(23),
+(24),
+(25),
+(26),
+(27),
+(28),
+(29),
+(30),
+(31),
+(32),
+(33),
+(34),
+(35),
+(36),
+(37),
+(38),
+(39),
+(40);
+
 -- --------------------------------------------------------
 
 --
@@ -104,66 +167,66 @@ CREATE TABLE `menu` (
 --
 
 INSERT INTO `menu` (`id_menu`, `nama_menu`, `id_kategori`, `harga`) VALUES
-(110, 'Curry Rice', '1', 0),
-(111, 'Beef Soup Rice', '1', 0),
-(112, 'Oyakodon', '1', 0),
-(113, 'Bento', '1', 0),
-(114, 'Yasai Itame Seafood', '1', 0),
-(115, 'Nasu Miso Ayam', '1', 0),
-(116, 'Tuna Katsu', '1', 0),
-(117, 'Tori Katsu', '1', 0),
-(118, 'Tuna Kusikatsu', '1', 0),
-(119, 'Tori Kusikatsu', '1', 0),
-(210, 'Sate Daging', '2', 0),
-(211, 'Soto Tulang', '2', 0),
-(212, 'Nasi Putih', '2', 0),
-(310, 'Mie Aceh', '3', 0),
-(311, 'Mie Aceh Telur', '3', 0),
-(312, 'Mie Aceh Daging', '3', 0),
-(313, 'Mie Aceh Udang', '3', 0),
-(314, 'Mie Aceh Kepiting', '3', 0),
-(315, 'Mia Aceh Ayam', '3', 0),
-(316, 'Indomie', '3', 0),
-(317, 'Indomier Telur', '3', 0),
-(318, 'Indomie Daging', '3', 0),
-(319, 'Indomie Udang', '3', 0),
-(321, 'Mie Hun Goreng Telur', '3', 0),
-(322, 'Mie Hun Goreng Udang', '3', 0),
-(323, 'Mie Hun Goreng Daging', '3', 0),
-(324, 'Mie Tiaw Telur', '3', 0),
-(325, 'Mie Tiaw Daging', '3', 0),
-(326, 'Nasi Goreng Telur', '3', 0),
-(327, 'Nasi Goreng Ayam', '3', 0),
-(328, 'Nasi Goreng Seafood (udang)', '3', 0),
-(329, 'Nasi Goreng Seafood (cumi)', '3', 0),
-(410, 'Espresso', '4', 0),
-(411, 'Doppio', '4', 0),
-(412, 'Ristretrrto', '4', 0),
-(413, 'D Ristrettro', '4', 0),
-(414, 'Long Black Coffee', '4', 0),
-(415, 'Marshmallow Hot Coffee', '4', 0),
-(416, 'Cappuccino', '4', 0),
-(417, 'Coffe Latte', '4', 0),
-(418, 'Hot Espresso Macchiato', '4', 0),
-(419, 'Latte Machiato', '4', 0),
-(421, 'Hot Espresso and Cream', '4', 0),
-(422, 'Whipfiedpresso', '4', 0),
-(423, 'Coffe Mocca', '4', 0),
-(424, 'Sanger Arabica Coffe', '4', 0),
-(425, 'Kopi Susu Arabica', '4', 0),
-(426, 'Grand Aceh Affogato', '4', 0),
-(510, 'Dimsum Ayam', '5', 0),
-(511, 'Dimsum Udang', '5', 0),
-(512, 'Dimsum Kepiting', '5', 0),
-(513, 'Bola-Bola Udang', '5', 0),
-(514, 'Lumpia Udang', '5', 0),
-(515, 'Dimsum Mix', '5', 0),
-(610, 'Vanilla', '6', 0),
-(611, 'Mango', '6', 0),
-(612, 'Avocado', '6', 0),
-(613, 'Fizzy Orange Squash', '6', 0),
-(614, 'Fizzy Espresso', '6', 0),
-(615, 'Fizzy Doppio', '6', 0);
+(110, 'Curry Rice', '1', 20000),
+(111, 'Beef Soup Rice', '1', 30000),
+(112, 'Oyakodon', '1', 30000),
+(113, 'Bento', '1', 30000),
+(114, 'Yasai Itame Seafood', '1', 20000),
+(115, 'Nasu Miso Ayam', '1', 20000),
+(116, 'Tuna Katsu', '1', 20000),
+(117, 'Tori Katsu', '1', 23000),
+(118, 'Tuna Kusikatsu', '1', 20000),
+(119, 'Tori Kusikatsu', '1', 23000),
+(210, 'Sate Daging', '2', 40000),
+(211, 'Soto Tulang', '2', 30000),
+(212, 'Nasi Putih', '2', 6000),
+(310, 'Mie Aceh', '3', 16000),
+(311, 'Mie Aceh Telur', '3', 19000),
+(312, 'Mie Aceh Daging', '3', 32000),
+(313, 'Mie Aceh Udang', '3', 32000),
+(314, 'Mie Aceh Kepiting', '3', 37000),
+(315, 'Mia Aceh Ayam', '3', 27000),
+(316, 'Indomie', '3', 16000),
+(317, 'Indomier Telur', '3', 19000),
+(318, 'Indomie Daging', '3', 32000),
+(319, 'Indomie Udang', '3', 32000),
+(321, 'Mie Hun Goreng Telur', '3', 16000),
+(322, 'Mie Hun Goreng Udang', '3', 32000),
+(323, 'Mie Hun Goreng Daging', '3', 32000),
+(324, 'Mie Tiaw Telur', '3', 16000),
+(325, 'Mie Tiaw Daging', '3', 32000),
+(326, 'Nasi Goreng Telur', '3', 17000),
+(327, 'Nasi Goreng Ayam', '3', 25000),
+(328, 'Nasi Goreng Seafood (udang)', '3', 30000),
+(329, 'Nasi Goreng Seafood (cumi)', '3', 30000),
+(410, 'Espresso', '4', 10000),
+(411, 'Doppio', '4', 16000),
+(412, 'Ristretrrto', '4', 10000),
+(413, 'D Ristrettro', '4', 16000),
+(414, 'Long Black Coffee', '4', 15000),
+(415, 'Marshmallow Hot Coffee', '4', 23000),
+(416, 'Cappuccino', '4', 17000),
+(417, 'Coffe Latte', '4', 18000),
+(418, 'Hot Espresso Macchiato', '4', 13000),
+(419, 'Latte Machiato', '4', 23000),
+(421, 'Hot Espresso and Cream', '4', 15000),
+(422, 'Whipfiedpresso', '4', 18000),
+(423, 'Coffe Mocca', '4', 18000),
+(424, 'Sanger Arabica Coffe', '4', 17000),
+(425, 'Kopi Susu Arabica', '4', 18000),
+(426, 'Grand Aceh Affogato', '4', 25000),
+(510, 'Dimsum Ayam', '5', 17000),
+(511, 'Dimsum Udang', '5', 17000),
+(512, 'Dimsum Kepiting', '5', 17000),
+(513, 'Bola-Bola Udang', '5', 16000),
+(514, 'Lumpia Udang', '5', 16000),
+(515, 'Dimsum Mix', '5', 22000),
+(610, 'Vanilla', '6', 20000),
+(611, 'Mango', '6', 25000),
+(612, 'Avocado', '6', 25000),
+(613, 'Fizzy Orange Squash', '6', 20000),
+(614, 'Fizzy Espresso', '6', 15000),
+(615, 'Fizzy Doppio', '6', 8000);
 
 -- --------------------------------------------------------
 
@@ -178,6 +241,13 @@ CREATE TABLE `menu_pesanan` (
   `harga_pesanan_persatuan` int(6) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `menu_pesanan`
+--
+
+INSERT INTO `menu_pesanan` (`id_pesanan`, `id_menu`, `quant`, `harga_pesanan_persatuan`) VALUES
+(29, 110, 2, 20000);
+
 -- --------------------------------------------------------
 
 --
@@ -188,8 +258,28 @@ CREATE TABLE `pesanan` (
   `username` varchar(30) NOT NULL,
   `id_pesanan` int(6) NOT NULL,
   `date` date NOT NULL,
-  `time` varchar(5) NOT NULL
+  `time` varchar(5) NOT NULL,
+  `people` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `pesanan`
+--
+
+INSERT INTO `pesanan` (`username`, `id_pesanan`, `date`, `time`, `people`) VALUES
+('maulidan', 27, '2018-05-10', '10:00', 2),
+('maulidan', 28, '2018-05-10', '10:00', 2),
+('maulidan', 29, '2018-05-10', '10:00', 2),
+('andika', 30, '2018-05-11', '11:00', 5),
+('andika', 31, '2018-05-10', '11:00', 4),
+('lutfi', 32, '2018-05-10', '10:00', 2),
+('lija', 33, '2018-05-14', '10:30', 5),
+('lija', 35, '2018-05-10', '12:00', 10),
+('farhanal', 36, '2018-05-01', '11:00', 20),
+('farhanal', 37, '2018-05-01', '11:00', 20),
+('farhanal', 38, '2018-05-07', '10:30', 20),
+('iindj', 39, '2018-05-17', '11:00', 2),
+('iindj', 40, '2018-05-17', '11:00', 2);
 
 -- --------------------------------------------------------
 
@@ -200,8 +290,16 @@ CREATE TABLE `pesanan` (
 CREATE TABLE `review` (
   `id_review` int(3) NOT NULL,
   `username` varchar(30) NOT NULL,
-  `desc_review` text NOT NULL
+  `comment` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `review`
+--
+
+INSERT INTO `review` (`id_review`, `username`, `comment`) VALUES
+(1, 'muammar zikri', 'makanannya sangat lezat dan pelayanannya pun baik sekali.'),
+(2, 'iindj', 'tempatnya sangat nyaman dan cock untuk seluruh kalangan');
 
 -- --------------------------------------------------------
 
@@ -223,11 +321,16 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`username`, `email`, `no_hp`, `password`, `id_level_access`) VALUES
 ('admin', 'byp@gmail.com', '082277368817', '8cdbaaeece079ecf0bb7e95a9684818e', 1),
+('andika', 'dika@gmail.com', '08134564789', 'db04eb4b07e0aaf8d1d477ae342bdff9', 2),
 ('aprik', 'aprik@gmail.com', '081360022', '202cb962ac59075b964b07152d234b70', 2),
 ('asfds', 'asfd@gmail.com', '', '69ce29da8d02ed500ea74ee3d6500ed4', 2),
 ('baru', 'baru@gmail.com', '798897977', '5ef035d11d74713fcb36f2df26aa7c3d', 2),
+('farhanal', 'farhan123@yahoo.com', '082245678912', 'd1bbb2af69fd350b6d6bd88655757b47', 2),
 ('iindj', 'djamiliin@gmail.com', '085277368817', '2fd1c63f744f8b08b5dbb42eb3180a64', 2),
-('maulidan', 'maulidanms@gmail.com', '08678678767', '597e2626a4056bfeb7fd91999a7db5d4', 2);
+('lija', 'lija@gmail.com', '0912344', '7815696ecbf1c96e6894b779456d330e', 2),
+('lutfi', 'lut@gmail.com', '081360055528', '202cb962ac59075b964b07152d234b70', 2),
+('maulidan', 'maulidanms@gmail.com', '08678678767', '597e2626a4056bfeb7fd91999a7db5d4', 2),
+('Muammar Zikri', 'zikriaksana@gmail.com', '081360055527', '70d70567e6d253e5046d6593652b3d2b', 2);
 
 --
 -- Indexes for dumped tables
@@ -304,7 +407,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `book`
 --
 ALTER TABLE `book`
-  MODIFY `id_book` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_book` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 --
 -- AUTO_INCREMENT for table `level_access`
 --
@@ -319,12 +422,12 @@ ALTER TABLE `menu`
 -- AUTO_INCREMENT for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id_pesanan` int(6) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_pesanan` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 --
 -- AUTO_INCREMENT for table `review`
 --
 ALTER TABLE `review`
-  MODIFY `id_review` int(3) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_review` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
