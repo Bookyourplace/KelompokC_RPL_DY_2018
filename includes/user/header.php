@@ -40,6 +40,7 @@
 								</li>
 								<li>
 									<a href="<?php echo $config['site_url'] ?>auth/logout.php">Log Out</a>
+									<!-- kalok bisa tambahin syarat kalok blm login, gada tombol logout -->
 								</li>
 							</ul>
 						</nav>
