@@ -1,5 +1,6 @@
 <?php 
   include "konfig/config.php";
+  include "konfig/koneksi.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -272,81 +273,39 @@
 		<!-- - -->
 		<div class="wrap-slick3">
 			<div class="slick3">
-				<div class="item-slick3 item1-slick3">
-					<div class="wrap-content-slide3 p-b-50 p-t-50">
-						<div class="container">				
-							<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
-								<p class="t-center txt12 size15 m-l-r-auto">
-									“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”
-								</p>
+				<?php 
+					$syntax="SELECT username, comment from review order by id_review";
+					$data = $link->query($syntax) or die($link);
 
-								<div class="star-review fs-18 color0 flex-c-m m-t-12">
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
-									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
-									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
-									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
-								</div>
+					while ($row = mysqli_fetch_assoc($data)) :
+				?>
+					<div class="item-slick3 item1-slick3">
+						<div class="wrap-content-slide3 p-b-50 p-t-50">
+							<div class="container">				
+								<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
+									<p class="t-center txt12 size15 m-l-r-auto">
+										“<?php echo $row["comment"]; ?>” - <?php echo $row["username"] ?>
+									</p>
 
-								<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
-									Marie Simmons ˗ New York
+									<!-- <div class="star-review fs-18 color0 flex-c-m m-t-12">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+										<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+										<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+										<i class="fa fa-star p-l-1" aria-hidden="true"></i>
+									</div> -->
+
+									<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
+										Marie Simmons ˗ New York
+									</div>
+									<a style= "center"; class="btn3 flex-c-m size18 txt11 trans-0-4 m-10" href="<?php echo $config['site_url'] ?>review/review.php" >Write your review</a>
 								</div>
-								<a style= "center"; class="btn3 flex-c-m size18 txt11 trans-0-4 m-10" href="<?php echo $config['site_url'] ?>review/review.php" >Write your review</a>
 							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="item-slick3 item2-slick3">
-					<div class="wrap-content-slide3 p-b-50 p-t-50">
-						<div class="container">
-							<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
-								<p class="t-center txt12 size15 m-l-r-auto">
-									“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”
-								</p>
-
-								<div class="star-review fs-18 color0 flex-c-m m-t-12">
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
-									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
-									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
-									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
-								</div>
-
-								<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
-									Marie Simmons ˗ New York
-								</div>
-								<a style= "center"; class="btn3 flex-c-m size18 txt11 trans-0-4 m-10" href="<?php echo $config['site_url'] ?>review/review.php" >Write your review</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="item-slick3 item3-slick3">
-					<div class="wrap-content-slide3 p-b-50 p-t-50">
-						<div class="container">
-							<div class="content-review m-t-33 animated visible-false" data-appear="fadeInUp">
-								<p class="t-center txt12 size15 m-l-r-auto">
-									“ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in pre-tium nec, fermentum viverra dui ”
-								</p>
-
-								<div class="star-review fs-18 color0 flex-c-m m-t-12">
-									<i class="fa fa-star" aria-hidden="true"></i>
-									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
-									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
-									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
-									<i class="fa fa-star p-l-1" aria-hidden="true"></i>
-								</div>
-
-								<div class="more-review txt4 t-center animated visible-false m-t-32" data-appear="fadeInUp">
-									Marie Simmons ˗ New York
-								</div>
-								<a style= "center"; class="btn3 flex-c-m size18 txt11 trans-0-4 m-10" href="<?php echo $config['site_url'] ?>review/review.php" >Write your review</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
+				<?php 
+					endwhile; 
+				?>
 			</div>
 
 			<div class="wrap-slick3-dots m-t-30"></div>
