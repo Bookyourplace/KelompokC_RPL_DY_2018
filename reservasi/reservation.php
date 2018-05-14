@@ -1,5 +1,14 @@
-<?php 
+<?php
+  //session_start();
+  include '../konfig/cek_belum_login.php';
   include "../konfig/config.php";
+ 
+
+  // jika ada post submit ada
+  if(isset($_POST['submit'])){
+	$_SESSION['book_table'] = $_POST; // masukkan data post dari user ke dalam session book table
+	header('Location: ' . $config['site_url'] . 'reservasi/choosetable.php'); // redirect ke halaman choostable
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,28 +17,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="widtd=device-width, initial-scale=1">
 
-	
-<!--	<style>
-		.tabel{
-			width:600px;
-			margin:auto;
-			text-align:center;
-			table-layout:fixed;
-		}
-		.tabel tr td{
-			padding:20px;
-			color:BLACK;
-			border:1px solid #080808;
-			border-collapse:collapse;
-			font-size:18px;
-			font-family:Arial;
-			background:linear-gradient(top, #A6FC3C 0%, #A6FC3C 100%);
-			background:-webkit-linear-gradient(top, #A6FC3C 0%, #A6FC3C 100%);
-		}
-		.tabel td:hover{
-			background:orange;
-		}
-	</style>-->
 	<?php include '../includes/user/css.php'?>
 </head>
 
@@ -48,7 +35,6 @@
 		</h2>
 	</section>
 
-
 	<!-- Reservation -->
 	<section class="section-reservation bg1-pattern p-t-100 p-b-113">
 		<div class="">
@@ -64,7 +50,7 @@
 						</h3>
 					</div>
 
-					<form class="wrap-form-reservation size22 m-l-r-auto">
+					<form class="wrap-form-reservation size22 m-l-r-auto" method="post">
 						<div class="row">
 							<div class="col-md-4">
 								<!-- Date -->
@@ -122,22 +108,20 @@
 								</span>
 
 								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="people" placeholder="People">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="number" name="people" placeholder="People">
 									</input>
 								</div>
 							</div>
 						</div>
-
-  								  
-						</div>
+	  
+						<!--</div>-->
 
 
 						<div class="wrap-btn-booking flex-c-m m-t-6" style="margin:auto;width:50%;">
 							<!-- Button3 -->
-							<a style="text-align:center; margin-bottom: 60px;" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10" href="<?php echo $config['site_url']?>reservasi/choosetable.php">
+							<button type="submit" name="submit" style="text-align:center; margin-bottom: 60px;" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">
 								Choose Table
-								
-							</a>
+							</button>
 						</div>
 					</form>
 				</div>
