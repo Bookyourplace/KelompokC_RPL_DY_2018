@@ -27,7 +27,7 @@
 	  $time = $_SESSION['book_table']['time'];
 	  $people = $_SESSION['book_table']['people'];
 
-	  $sql = "INSERT INTO pesanan(username, date, time, people) values('$_SESSION[login_user]', '$date', '$time', '$people')";
+	  $sql = "INSERT INTO pesanan(username, date, time, people) values('$_SESSION[login_user]', '$date', '$time', '$people')"; //query pengambilan data dari db
 	  $status = $link->query($sql) or die(mysqli_error($link));
 	  if($status){
 		  // menambah data meja yang di booking
