@@ -58,7 +58,7 @@
 							</div>
 
 							<span class="info-item-mainmenu txt23">
-								Nasi Kari Kuah 
+								Nasi Kari
 							</span>
 						</div>
 
