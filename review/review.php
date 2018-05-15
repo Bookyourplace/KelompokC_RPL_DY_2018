@@ -80,7 +80,7 @@
                             <textarea name="comment" placeholder="Write your comment here!" class="form-control" align="center"></textarea><br>
                         </div>
                         <div class="form-group">
-                            <input type="submit" name="send" value="Send" class="btn btn-default" align="center">
+                            <input type="submit" name="send" value="Send" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10" align="center">
                         </div>
                     </div>
                 </form>
