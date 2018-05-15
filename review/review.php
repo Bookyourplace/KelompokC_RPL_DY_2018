@@ -55,7 +55,7 @@ session_start();
     </section>
         
 <?php   
-   $syntax="SELECT username, comment from review order by id_review";
+   /*$syntax="SELECT username, comment from review order by id_review";
     $data= $link->query($syntax) or die(mysqli_error($link));
     if ($data){
     $cnt=0;
@@ -65,7 +65,7 @@ session_start();
             echo "<div>$username : $comment</div>";
         }
         
-    }
+    }*/
         
 ?>
 
