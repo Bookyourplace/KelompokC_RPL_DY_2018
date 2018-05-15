@@ -69,8 +69,8 @@
     }*/
         
 ?>
-
-    <div class="container" style="padding:60px 0">
+<section class="section-welcome bg1-pattern p-t-120 p-b-105">
+    <div class="container" style="padding:60px 0px">
         <div class="row">
             <div class="col-12 form-coment">
                 <form action="review.php" method="POST">
@@ -87,6 +87,7 @@
             </div>
         </div>
     </div>
+
 
  <!-- Footer -->
  <?php include '../includes/user/footer.php'?>
