@@ -77,7 +77,7 @@
                     <div class="form-group">
 
                         <div class="form-group">
-                            <textarea name="comment" placeholder="Write your comment here!" class="form-control" align="center"></textarea><br>
+                            <textarea name="comment" placeholder="Write your comment here!" class="form-control" align="center" style="margin-top: 0px; margin-bottom: 0px; height: 300px;"></textarea><br>
                         </div>
                         <div class="form-group">
                             <input type="submit" name="send" value="Send" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10" align="center">
