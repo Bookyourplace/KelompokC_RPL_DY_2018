@@ -1,5 +1,5 @@
 <?php  
-session_start();
+    session_start();
     include '../konfig/config.php';
     require_once "../konfig/koneksi.php"; ?>
 
@@ -45,17 +45,18 @@ session_start();
 
 <body>
 
-<?php include '../includes/user/header.php'?>
-   
+    <?php include '../includes/user/header.php'?>
+    <?php include '../includes/user/sidebar.php'?>
+
 
 <!-- Title Page -->
-    <section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(<?php echo $config['site_url']?>assets/users/images/review.jpg);">
+    <section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(<?php echo $config['site_url']?>assets/users/images/review1.jpg);">
 		<h2 style= "color:black;" class="tit6 t-center">
 			Customer Review
     </section>
         
 <?php   
-   $syntax="SELECT username, comment from review order by id_review";
+   /*$syntax="SELECT username, comment from review order by id_review";
     $data= $link->query($syntax) or die(mysqli_error($link));
     if ($data){
     $cnt=0;
@@ -65,23 +66,29 @@ session_start();
             echo "<div>$username : $comment</div>";
         }
         
-    }
+    }*/
         
 ?>
+<section class="section-welcome bg1-pattern p-t-120 p-b-105">
+    <div class="container" style="padding:60px 0px">
+        <div class="row">
+            <div class="col-12 form-coment">
+                <form action="review.php" method="POST">
+                    <div class="form-group">
 
-    <div class="col-7 form-coment">
-    <form action="review.php" method="POST">
-        <div class="form-group">
-
-        <div class="form-group">
-            <textarea name="comment" placeholder="Write your comment here!" class="form-control" align="center"></textarea><br>
+                        <div class="form-group">
+                            <textarea name="comment" placeholder="Write your comment here!" class="form-control" align="center" style="margin-top: 0px; margin-bottom: 0px; height: 300px;"></textarea><br>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="send" value="Send" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10" align="center">
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="form-group">
-        <input type="submit" name="send" value="Send" class="btn btn-default" align="center">
-    </form>
-    </div>  
-</div> 
-</div>       
+    </div>
+</section>
+
 
  <!-- Footer -->
  <?php include '../includes/user/footer.php'?>
@@ -98,6 +105,7 @@ session_start();
 <!-- Container Selection1 -->
 <div id="dropDownSelect1"></div>
 
+<?php include '../includes/user/js.php'?>
 
 
 
