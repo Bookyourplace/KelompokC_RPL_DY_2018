@@ -1,5 +1,5 @@
 <?php  
-session_start();
+    session_start();
     include '../konfig/config.php';
     require_once "../konfig/koneksi.php"; ?>
 
@@ -70,19 +70,23 @@ session_start();
         
 ?>
 
-    <div class="col-7 form-coment">
-    <form action="review.php" method="POST">
-        <div class="form-group">
+    <div class="container" style="padding:60px 0">
+        <div class="row">
+            <div class="col-12 form-coment">
+                <form action="review.php" method="POST">
+                    <div class="form-group">
 
-        <div class="form-group">
-            <textarea name="comment" placeholder="Write your comment here!" class="form-control" align="center"></textarea><br>
+                        <div class="form-group">
+                            <textarea name="comment" placeholder="Write your comment here!" class="form-control" align="center"></textarea><br>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="send" value="Send" class="btn btn-default" align="center">
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="form-group">
-        <input type="submit" name="send" value="Send" class="btn btn-default" align="center">
-    </form>
-    </div>  
-</div> 
-</div>       
+    </div>
 
  <!-- Footer -->
  <?php include '../includes/user/footer.php'?>
