@@ -93,9 +93,12 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 ///////////////////////////////////////////////////////////
 */
 * {
+  font-family: Montserrat;
+  font-size: 15px;
 	margin: 0px; 
 	padding: 0px; 
-	box-sizing: border-box;
+  box-sizing: border-box;
+  color:grey;
 }
 
 body, html {
