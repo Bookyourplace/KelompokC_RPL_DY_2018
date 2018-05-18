@@ -17,7 +17,7 @@
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="<?php echo $config['site_url'] ?>auth/register.php" class="txt19">Register</a>
+				<a href="<?php echo $config['site_url'] ?>review/review.php" class="txt19">Review</a>
 			</li>
 
 			<li class="t-center m-b-33">
