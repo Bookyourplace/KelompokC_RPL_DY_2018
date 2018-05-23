@@ -56,7 +56,38 @@
     </section>
         
 <section class="bg1-pattern p-t-120 p-b-150">  
+<?php   
+   $syntax="SELECT username, comment from review order by id_review";
+    $data= $link->query($syntax) or die(mysqli_error($link));
+    if ($data){
+    $cnt=0;
+        while ($row = mysqli_fetch_assoc($data)){
+            $username = $row["username"];
+            $comment = $row["comment"]; 
+            echo "<div style=' padding: 1px 0px;
+            margin:0 auto;
+            margin-top:1px;
+            width:250px; 
+            text-align:center;
+            '>{$username}</div>";
+            echo "<div style='border: 2px solid rgba(0,0,0,0.8);
+            margin:0 auto;
+		    margin-top:1px;
+            width:300px; 
+            padding: 15px;
+            cursor: pointer;
+            background: -webkit-linear-gradient(top, #efefef, #ddd);
+            background: -moz-linear-gradient(top, #efefef, #ddd);
+            background: -ms-linear-gradient(top, #efefef, #ddd);
+            background: -o-linear-gradient(top, #efefef, #ddd);
+            background: linear-gradient(top, #efefef, #ddd);
+            color: #333;
+            '>{$comment}</div><br />";
+        }
+        
+    }
 
+?>
 <section class="section-welcome bg1-pattern p-t-120 p-b-105">
     <div class="container" style="padding:60px 0px">
         <div class="row">
