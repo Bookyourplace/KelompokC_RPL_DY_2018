@@ -14,8 +14,8 @@
                     <li><a href="review.php"> <i class="icon-padnote"></i>Review </a></li>
                     <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Menu </a>
                       <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-                      <li><a href="<?php echo $config['site_url'] ?>dashboard/list_menu.php">List Menu</a></li>
-                        <li><a href="#">Page</a></li>
+                        <li><a href="<?php echo $config['site_url'] ?>dashboard/list_menu.php">List Menu</a></li>
+                        <li><a href="<?php echo $config['site_url'] ?>dashboard/tambah_menu.php#">Tambah Menu</a></li>
                         <li><a href="#">Page</a></li>
                       </ul>
                     </li>
