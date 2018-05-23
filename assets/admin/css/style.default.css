@@ -27,6 +27,12 @@ span {
   transition: all 0.3s;
 }
 
+.input-group-btn {
+  background: #f2f2f2;
+  display: block;
+  padding: 9px;
+}
+
 a:hover, a:focus,
 i:hover,
 i:focus,
@@ -452,8 +458,8 @@ nav.side-navbar ul li a {
 }
 
 nav.side-navbar ul li a:hover {
-  background: #796AEE;
-  border-left: 4px solid #3b25e6;
+  background: #222222ef;
+  border-left: 4px solid #222222ef;
   color: #fff;
 }
 
@@ -463,13 +469,13 @@ nav.side-navbar ul li li a {
 }
 
 nav.side-navbar ul li.active > a {
-  background: #796AEE;
+  background: #222222ef;
   color: #fff;
-  border-left: 4px solid #3b25e6;
+  border-left: 4px solid #222222ef;
 }
 
 nav.side-navbar ul li.active > a:hover {
-  background: #796AEE;
+  background: #222222ef;
 }
 
 nav.side-navbar ul li li.active > a {
@@ -620,13 +626,13 @@ nav.side-navbar.shrinked .sidebar-header .title {
 * ==========================================================
 */
 nav.navbar {
-  background: #2f333e;
+  background: #222222ef;
   padding-top: 15px;
   padding-bottom: 15px;
   color: #fff;
   position: relative;
   border-radius: 0;
-  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 2px 2px #222222ef;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   z-index: 10;
   padding-left: 0;
@@ -1087,7 +1093,7 @@ footer.main-footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: #2f333e;
+  background: #222222ef;
   color: #fff;
   padding: 20px 10px;
 }
