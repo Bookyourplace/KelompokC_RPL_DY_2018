@@ -7,7 +7,7 @@
               <p>Web Designer</p>
             </div>-->
           </div>
-          <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
+          <!-- Sidebar Navidation Menus--><!--<span class="heading">Main</span>-->
           <ul class="list-unstyled">
                     <li><a href="index.php"> <i class="icon-home"></i>Home </a></li>
                     <li class="active"><a href="reservasi.php"> <i class="icon-grid"></i>Reservasi </a></li>
