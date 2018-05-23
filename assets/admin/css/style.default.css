@@ -469,9 +469,9 @@ nav.side-navbar ul li li a {
 }
 
 nav.side-navbar ul li.active > a {
-  background: #796AEE;
+  background: #222222ef;
   color: #fff;
-  border-left: 4px solid #3b25e6;
+  border-left: 4px solid #222222ef;
 }
 
 nav.side-navbar ul li.active > a:hover {
