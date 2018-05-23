@@ -12,7 +12,7 @@
                     <li><a href="index.php"> <i class="icon-home"></i>Home </a></li>
                     <li class="active"><a href="reservasi.php"> <i class="icon-grid"></i>Reservasi </a></li>
                     <li><a href="review.php"> <i class="icon-padnote"></i>Review </a></li>
-                    <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Example dropdown </a>
+                    <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Menu </a>
                       <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
                         <li><a href="#">Page</a></li>
                         <li><a href="#">Page</a></li>
