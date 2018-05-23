@@ -27,6 +27,12 @@ span {
   transition: all 0.3s;
 }
 
+.input-group-btn {
+  background: #f2f2f2;
+  display: block;
+  padding: 9px;
+}
+
 a:hover, a:focus,
 i:hover,
 i:focus,
