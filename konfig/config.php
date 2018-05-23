@@ -1,6 +1,6 @@
 <?php
 $config = [
-  'site_url'=> 'http://localhost/KelompokC_RPL_DY_2018/'
+  'site_url'=> 'http://localhost/rpl1/'
 ];
 
 ?>
