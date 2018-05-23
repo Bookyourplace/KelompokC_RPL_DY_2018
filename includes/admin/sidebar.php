@@ -11,7 +11,6 @@
           <ul class="list-unstyled">
                     <li><a href="index.php"> <i class="icon-home"></i>Home </a></li>
                     <li class="active"><a href="reservasi.php"> <i class="icon-grid"></i>Reservasi </a></li>
-                    <li><a href="order.php"> <i class="fa fa-bar-chart"></i>Order </a></li>
                     <li><a href="forms.php"> <i class="icon-padnote"></i>Review </a></li>
                     <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Example dropdown </a>
                       <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
