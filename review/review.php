@@ -55,20 +55,8 @@
 			Customer Review
     </section>
         
-<?php   
-   /*$syntax="SELECT username, comment from review order by id_review";
-    $data= $link->query($syntax) or die(mysqli_error($link));
-    if ($data){
-    $cnt=0;
-        while ($row = mysqli_fetch_assoc($data)){
-            $username = $row["username"];
-            $comment = $row["comment"]; 
-            echo "<div>$username : $comment</div>";
-        }
-        
-    }*/
-        
-?>
+<section class="bg1-pattern p-t-120 p-b-150">  
+
 <section class="section-welcome bg1-pattern p-t-120 p-b-105">
     <div class="container" style="padding:60px 0px">
         <div class="row">
@@ -87,6 +75,7 @@
             </div>
         </div>
     </div>
+</section>
 </section>
 
 
