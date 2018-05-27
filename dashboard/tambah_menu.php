@@ -83,6 +83,14 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <label class="col-sm-2 control-label">Nama menu</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" name="nama_menu"  id="nama_menu" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
