@@ -47,6 +47,23 @@
         <!--sidebar-->
         <?php include '../includes/admin/sidebar.php'?>
 
+        <div class="content-inner">
+            <!-- page header-->
+            <header class="page-header">
+                <div class="container-fluid">
+                <h2 class="no-margin-bottom">Tambah Menu</h2>   
+                </div>
+            </header>
+            <!-- Breadcrumb (buat kayak ada reverse nya gitu-->
+            <div class="breadcrumb-holder container-fluid">
+                    <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item"><a href="<?php echo $config['site_url']?>dashboard/list_menu.php">Menu</a></li>
+                    <li class="breadcrumb-item active">Tambah Menu            </li>
+                    </ul>
+            </div>
+        </div>
+    </div>
 
     <?php include '../includes/admin/footer.php'?>
 
