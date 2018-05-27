@@ -88,6 +88,26 @@
                         <div class="card-body">
                             <div class="basic-form">
                                 <form class="" action="edit_menu.php?id_menu=<?php echo $_GET['id_menu']; ?>" method="post">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <label class="col-sm-2 control-label" for="nama_menu">Nama menu</label><br>
+                                            <div class="col-sm-10">
+                                                <input type="text" name="nama_menu" id="nama_menu" class="form-control" value="<?php echo $data['nama_menu']; ?>"><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <label class="col-sm-2 control-label" for="harga">Harga menu</label><br>
+                                            <div class="col-sm-10">
+                                                <div class="input-group">
+                                                    <span class="input-group-btn">Rp</span>
+                                                    <input type="text" name="harga" id="harga" class="form-control" value="<?php echo $data['harga']; ?>">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                             
                                 </form>
                             </div> 
                         </div>
@@ -95,8 +115,5 @@
                 </div>
             </div>
        </div>
-
-    </div>
-</div>
 </body>
 </html>
