@@ -24,3 +24,4 @@
 <?php include '../includes/user/sidebar.php'?>
 
 <!-- Title Page -->
+<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(<?php echo $config['site_url']?>assets/users/images/payment.jpg);">
