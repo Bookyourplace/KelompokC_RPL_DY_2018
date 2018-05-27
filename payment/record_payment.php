@@ -11,5 +11,5 @@
 <html lang="en">
 <head>
     <title>RECORD PAYMENT</title>
-    
+    <meta charset="UTF-8">
 </head>
