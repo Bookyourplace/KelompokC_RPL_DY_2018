@@ -56,7 +56,8 @@
             </tr>
      
             <?php endfor; ?>
-        </tbody>      
+        </tbody>
+        </table></div>      
     </div>
     </body>
  </html>
