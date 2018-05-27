@@ -25,7 +25,19 @@
               <li class="breadcrumb-item"><a href="index.php">Home</a></li>
               <li class="breadcrumb-item active">List Menu            </li>
             </ul>
-        </div>      
+        </div>
+
+        <div><table align="center" border="5"  cellpadding="3" style="width:60%">
+        <thead>
+            <tr align="center" height="80">
+            <th>No</th>
+            <th>Id Menu</th>
+            <th>Nama Menu</th>
+            <th>Id Kategori</th>
+            <th>Harga</th>
+            <th style="width:150px">Aksi</th>
+            </tr>
+        </thead>      
     </div>
     </body>
  </html>
