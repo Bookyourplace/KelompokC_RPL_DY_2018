@@ -66,7 +66,14 @@
             <div class="container-fluid">
                 <h2 class="no-margin-bottom">Edit Menu</h2>   
             </div>
-       </header>      
+       </header>
+       <div class="breadcrumb-holder container-fluid">
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+              <li class="breadcrumb-item"><a href="<?php echo $config['site_url']?>dashboard/list_menu.php">Menu</a></li>
+              <li class="breadcrumb-item active">Edit Menu            </li>
+            </ul>
+      </div>      
     </div>
 </div>
 </body>
