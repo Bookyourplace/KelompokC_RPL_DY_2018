@@ -106,6 +106,17 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <label class="col-sm-2 control-label">Harga</label>
+                                                    <div class="col-sm-10">
+                                                        <div class="input-group">
+                                                            <span class="input-group-btn">Rp</span>
+                                                            <input type="text" placeholder="Price" name="harga" id="harga" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>   
                                         </form>
                                     </div>
                                 </div>
