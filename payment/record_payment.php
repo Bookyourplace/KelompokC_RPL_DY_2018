@@ -28,3 +28,4 @@
     <h2 class="tit6 t-center">
     RECORD PAYMENT
     </h2>
+    </section>
