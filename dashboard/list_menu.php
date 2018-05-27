@@ -27,6 +27,17 @@
             </ul>
         </div>
 
+        <!--alert utk notifikasi berhasil atau enggak-->
+        <?php
+            if (isset($_SESSION['status_proses'])) {
+            echo ' <div class="alert alert-success alert-dismissible fade show">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>';
+            echo "<div><strong>$_SESSION[status_proses]</strong></div>";
+            echo "</div>";
+            unset($_SESSION['status_proses']);
+            }
+        ?>
+
         <div><table align="center" border="5"  cellpadding="3" style="width:60%">
         <thead>
             <tr align="center" height="80">
@@ -64,6 +75,10 @@
         <div><table border="1" style="width:100%">
 
         <?php include '../includes/admin/footer.php'?>
+
+        </div>
+    </div>
+</div>
         <?php include '../includes/admin/js.php'?>
     </body>
  </html>
