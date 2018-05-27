@@ -19,3 +19,4 @@
 
 <body>
 <?php include '../includes/user/header.php'?>
+<?php include '../includes/user/sidebar.php'?>
