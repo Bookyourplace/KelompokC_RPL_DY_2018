@@ -119,5 +119,9 @@
                 </div>
             </div>
        </div>
+
+<?php include '../includes/admin/footer.php'?>
+
+<?php include '../includes/admin/js.php'?>
 </body>
 </html>
