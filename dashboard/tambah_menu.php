@@ -75,6 +75,14 @@
                                 <div class="card-body"> 
                                     <div class="basic-form">
                                         <form class="" action="tambah_menu.php" method="post">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <label class="col-sm-2 control-label">Id menu</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" name="id_menu" id="id_menu" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </form>
                                     </div>
                                 </div>
