@@ -80,6 +80,21 @@
        <br></br>
        <br></br>
        <br></br>
+       <div class="container-fluid">
+       <!-- Start Page Content -->
+            <div class="row">
+                <div class="col-9" style="margin:0 auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="basic-form">
+                                <form class="" action="edit_menu.php?id_menu=<?php echo $_GET['id_menu']; ?>" method="post">
+                                </form>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
 
     </div>
 </div>
