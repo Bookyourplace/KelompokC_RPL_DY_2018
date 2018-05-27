@@ -31,4 +31,4 @@
     </section>
 
     <section class="section-reservation bg1-pattern p-t-100 p-b-113">
-    
+    <div class="">
