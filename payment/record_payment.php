@@ -16,3 +16,5 @@
     
     <?php include '../includes/user/css.php'?>
 </head>
+
+<body>
