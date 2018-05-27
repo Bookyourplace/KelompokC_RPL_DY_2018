@@ -28,7 +28,7 @@
 	</section>
 
 
-	<!-- Our Story -->
+	<!-- Our Story-->
 	<section class="bg2-pattern p-t-116 p-b-110 t-center p-l-15 p-r-15">
 		<span class="tit2 t-center">
 			Book Your Place
@@ -42,7 +42,8 @@
 			Web ini dibuat untuk melakuakan reservasi tempat dan pemesanan makanan di Grand Aceh Kuliner Cafe.
 			Dengan web ini, pengunjung dapat lebih mudah dalam melakukan reservasi tanpa harus mendatangi cafe tersebut terlebih dahulu.
 			Selain reservasi, pengunjung juga dapat melihat menu-menu makanan yang ada di cafe ini dan bisa langsung memesan makanan tersebut
-			setelah melakukan reservasi, pengunjung juga langsung dapat memesan makanan di dalam web ini. Cafe ini juga memberikan layanan untuk meeting.
+			setelah melakukan reservasi, pengunjung juga langsung dapat memesan makanan di dalam web ini. Cafe ini juga menyediakan fasilitas berupa meeting room. 
+			Sehingga Cafe ini juga cocok dikunjungi saat ingin melakukan rapat.
 		</p>
 	</section>
 
