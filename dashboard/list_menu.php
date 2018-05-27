@@ -20,6 +20,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="robots" content="all,follow">
 
+
         <!--css-->
         <?php include '../includes/admin/css.php'; ?>
     </head>
@@ -32,6 +33,8 @@
 
     <!--sidebar-->
     <?php include '../includes/admin/sidebar.php'?>
+    
+    <div class="content-inner">
         <!-- page header-->
         <header class="page-header">
             <div class="container-fluid">
