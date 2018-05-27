@@ -1,3 +1,15 @@
+<?php
+  session_start();
+  include '../konfig/config.php'; 
+  require '../konfig/koneksi.php';
+
+  if (!isset($_SESSION['login_user']))
+    header('Location:../login.php');
+
+  $sql = "SELECT * FROM menu";
+  $data = mysqli_query($link, $sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
