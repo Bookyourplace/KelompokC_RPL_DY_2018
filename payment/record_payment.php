@@ -6,3 +6,5 @@
 
     require_once '../konfig/koneksi.php';
 ?>
+
+<!DOCTYPE html>
