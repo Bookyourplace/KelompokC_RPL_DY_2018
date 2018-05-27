@@ -37,7 +37,26 @@
             <th>Harga</th>
             <th style="width:150px">Aksi</th>
             </tr>
-        </thead>      
+        </thead>
+        <tbody>
+            <?php
+            for ($i = 1; $row = mysqli_fetch_assoc($data); $i++) :
+            ?>
+            <tr>
+                <td align="center"><?php echo $i; ?></td>
+                <td align="center"><?php echo $row['id_menu']; ?></td>
+                <td ><?php echo $row['nama_menu']; ?></td>
+                <td align="center"><?php echo $row['id_kategori']; ?></td>
+                <td><?php echo $row['harga']; ?></td>
+                <td>            
+                    <div class="btn-group btn-group-justified">
+                        <a href="edit_menu.php?id_menu=<?php echo $row['id_menu'] ?>" class="btn btn-link ">Edit</a>              
+                        <a onclick="return confirm('Are you sure you want to delete this entry?')" href="delete_menu.php?id_menu=<?php echo $row['id_menu'] ?>" class="btn btn-link">Hapus</a></td>
+                    </div>     
+            </tr>
+     
+            <?php endfor; ?>
+        </tbody>      
     </div>
     </body>
  </html>
