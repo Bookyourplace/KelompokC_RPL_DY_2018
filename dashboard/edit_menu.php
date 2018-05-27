@@ -50,5 +50,14 @@
     <?php include '../includes/admin/css.php'; ?>
 </head>
 <body>
+
+<div class="page"> 
+    <!--header-->
+    <?php include '../includes/admin/header.php'?>
+    <!--class untuk buat letak tulisan dalam nya teratur-->
+    <div class="page-content d-flex align-items-stretch"> 
+    
+    <!--sidebar-->
+    <?php include '../includes/admin/sidebar.php'?>
 </body>
 </html>
