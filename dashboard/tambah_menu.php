@@ -116,6 +116,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div class="pull-right">
+                                                <button type="submit" value="submit" class="btn btn-primary" style="background: #222222ef">
+                                                    Tambah Menu
+                                                </button>
                                             </div>   
                                         </form>
                                     </div>
@@ -123,10 +128,9 @@
                             </div>
                         </div>
                     </div>
+                    <!-- End PAge Content -->
                 </div>
-                
-        </div>
-    </div>
+                <!-- End Container fluid  --> 
 
     <?php include '../includes/admin/footer.php'?>
 
