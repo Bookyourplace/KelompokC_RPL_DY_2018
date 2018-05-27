@@ -74,6 +74,8 @@
                             <div class="card">
                                 <div class="card-body"> 
                                     <div class="basic-form">
+                                        <form class="" action="tambah_menu.php" method="post">
+                                        </form>
                                     </div>
                                 </div>
                             </div>
