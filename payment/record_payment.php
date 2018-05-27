@@ -10,5 +10,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <title>RECORD PAYMENT</title>
+    
 </head>
