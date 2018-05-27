@@ -73,7 +73,14 @@
               <li class="breadcrumb-item"><a href="<?php echo $config['site_url']?>dashboard/list_menu.php">Menu</a></li>
               <li class="breadcrumb-item active">Edit Menu            </li>
             </ul>
-      </div>      
+       </div>
+       
+       <!-- Container fluid  -->
+       <br></br>
+       <br></br>
+       <br></br>
+       <br></br>
+
     </div>
 </div>
 </body>
