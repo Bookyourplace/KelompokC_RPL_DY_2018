@@ -25,6 +25,13 @@
     </head>
     <body>
     <div class="page">
+    <!--header-->
+    <?php include '../includes/admin/header.php'?>
+
+    <div class="page-content d-flex align-items-stretch"> 
+
+    <!--sidebar-->
+    <?php include '../includes/admin/sidebar.php'?>
         <!-- page header-->
         <header class="page-header">
             <div class="container-fluid">
