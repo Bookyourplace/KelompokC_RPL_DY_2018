@@ -107,7 +107,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                             
+                                    <div class="pull-right">
+                                        <button type="submit" value="submit" name="submit" class="btn btn-primary" style="background: #222222ef">
+                                            Update
+                                        </button>
+                                    </div>         
                                 </form>
                             </div> 
                         </div>
