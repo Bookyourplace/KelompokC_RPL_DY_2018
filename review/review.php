@@ -73,7 +73,7 @@
             echo "<div style='border: 2px solid rgba(0,0,0,0.8);
             margin:0 auto;
 		    margin-top:1px;
-            width:300px; 
+            width:500px; 
             padding: 15px;
             cursor: pointer;
             background: -webkit-linear-gradient(top, #efefef, #ddd);
