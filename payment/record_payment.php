@@ -85,3 +85,5 @@
 
   <!-- Footer -->
   <?php include '../includes/user/footer.php'?>
+
+  <!-- Back to top -->
