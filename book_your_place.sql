@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.8.0
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 13 Mei 2018 pada 04.42
--- Versi Server: 10.1.13-MariaDB
--- PHP Version: 7.0.6
+-- Generation Time: May 27, 2018 at 10:53 AM
+-- Server version: 10.1.31-MariaDB
+-- PHP Version: 7.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -23,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `book`
+-- Table structure for table `book`
 --
 
 CREATE TABLE `book` (
@@ -33,7 +35,7 @@ CREATE TABLE `book` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `book`
+-- Dumping data for table `book`
 --
 
 INSERT INTO `book` (`id_book`, `id_meja`, `id_pesanan`) VALUES
@@ -48,12 +50,21 @@ INSERT INTO `book` (`id_book`, `id_meja`, `id_pesanan`) VALUES
 (14, 1, 35),
 (16, 4, 37),
 (18, 3, 38),
-(20, 19, 40);
+(20, 19, 40),
+(21, 13, 41),
+(22, 34, 42),
+(23, 32, 43),
+(24, 11, 45),
+(25, 16, 46),
+(26, 16, 47),
+(27, 3, 48),
+(28, 3, 49),
+(29, 8, 50);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kategori`
+-- Table structure for table `kategori`
 --
 
 CREATE TABLE `kategori` (
@@ -62,7 +73,7 @@ CREATE TABLE `kategori` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `kategori`
+-- Dumping data for table `kategori`
 --
 
 INSERT INTO `kategori` (`id_kategori`, `jenis_kategori`) VALUES
@@ -76,7 +87,7 @@ INSERT INTO `kategori` (`id_kategori`, `jenis_kategori`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `level_access`
+-- Table structure for table `level_access`
 --
 
 CREATE TABLE `level_access` (
@@ -85,7 +96,7 @@ CREATE TABLE `level_access` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `level_access`
+-- Dumping data for table `level_access`
 --
 
 INSERT INTO `level_access` (`id_level_access`, `keterangan`) VALUES
@@ -96,7 +107,7 @@ INSERT INTO `level_access` (`id_level_access`, `keterangan`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `meja`
+-- Table structure for table `meja`
 --
 
 CREATE TABLE `meja` (
@@ -104,7 +115,7 @@ CREATE TABLE `meja` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `meja`
+-- Dumping data for table `meja`
 --
 
 INSERT INTO `meja` (`id_meja`) VALUES
@@ -152,7 +163,7 @@ INSERT INTO `meja` (`id_meja`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `menu`
+-- Table structure for table `menu`
 --
 
 CREATE TABLE `menu` (
@@ -163,7 +174,7 @@ CREATE TABLE `menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `menu`
+-- Dumping data for table `menu`
 --
 
 INSERT INTO `menu` (`id_menu`, `nama_menu`, `id_kategori`, `harga`) VALUES
@@ -231,7 +242,7 @@ INSERT INTO `menu` (`id_menu`, `nama_menu`, `id_kategori`, `harga`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `menu_pesanan`
+-- Table structure for table `menu_pesanan`
 --
 
 CREATE TABLE `menu_pesanan` (
@@ -242,16 +253,41 @@ CREATE TABLE `menu_pesanan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `menu_pesanan`
+-- Dumping data for table `menu_pesanan`
 --
 
 INSERT INTO `menu_pesanan` (`id_pesanan`, `id_menu`, `quant`, `harga_pesanan_persatuan`) VALUES
-(29, 110, 2, 20000);
+(29, 110, 2, 20000),
+(41, 613, 1, 20000),
+(42, 512, 2, 17000),
+(43, 110, 2, 20000),
+(43, 111, 2, 30000),
+(44, 412, 2, 10000),
+(44, 513, 3, 16000),
+(45, 415, 4, 23000),
+(45, 515, 2, 22000),
+(47, 110, 2, 20000),
+(47, 111, 2, 30000),
+(49, 110, 2, 20000),
+(50, 111, 2, 30000),
+(50, 112, 3, 30000);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pesanan`
+-- Table structure for table `payment`
+--
+
+CREATE TABLE `payment` (
+  `id_payment` int(6) NOT NULL,
+  `id_pesanan` int(6) DEFAULT NULL,
+  `total_harga` int(6) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pesanan`
 --
 
 CREATE TABLE `pesanan` (
@@ -263,7 +299,7 @@ CREATE TABLE `pesanan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `pesanan`
+-- Dumping data for table `pesanan`
 --
 
 INSERT INTO `pesanan` (`username`, `id_pesanan`, `date`, `time`, `people`) VALUES
@@ -279,12 +315,22 @@ INSERT INTO `pesanan` (`username`, `id_pesanan`, `date`, `time`, `people`) VALUE
 ('farhanal', 37, '2018-05-01', '11:00', 20),
 ('farhanal', 38, '2018-05-07', '10:30', 20),
 ('iindj', 39, '2018-05-17', '11:00', 2),
-('iindj', 40, '2018-05-17', '11:00', 2);
+('iindj', 40, '2018-05-17', '11:00', 2),
+('iindj', 41, '2018-05-01', '12:30', 10),
+('iindj', 42, '2018-05-16', '10:00', 5),
+('iindj', 43, '2018-05-16', '10:00', 3),
+('iindj', 44, '1970-01-01', '', 0),
+('iindj', 45, '2018-05-16', '10:00', 3),
+('sasa', 46, '2018-05-23', '10:00', 6),
+('sasa', 47, '2018-05-23', '10:00', 6),
+('sasa', 48, '2018-05-24', '10:00', 4),
+('sasa', 49, '2018-05-24', '10:00', 4),
+('sasa', 50, '2018-05-27', '10:00', 3);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `review`
+-- Table structure for table `review`
 --
 
 CREATE TABLE `review` (
@@ -294,7 +340,7 @@ CREATE TABLE `review` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `review`
+-- Dumping data for table `review`
 --
 
 INSERT INTO `review` (`id_review`, `username`, `comment`) VALUES
@@ -304,7 +350,7 @@ INSERT INTO `review` (`id_review`, `username`, `comment`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -316,7 +362,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`username`, `email`, `no_hp`, `password`, `id_level_access`) VALUES
@@ -330,7 +376,8 @@ INSERT INTO `users` (`username`, `email`, `no_hp`, `password`, `id_level_access`
 ('lija', 'lija@gmail.com', '0912344', '7815696ecbf1c96e6894b779456d330e', 2),
 ('lutfi', 'lut@gmail.com', '081360055528', '202cb962ac59075b964b07152d234b70', 2),
 ('maulidan', 'maulidanms@gmail.com', '08678678767', '597e2626a4056bfeb7fd91999a7db5d4', 2),
-('Muammar Zikri', 'zikriaksana@gmail.com', '081360055527', '70d70567e6d253e5046d6593652b3d2b', 2);
+('Muammar Zikri', 'zikriaksana@gmail.com', '081360055527', '70d70567e6d253e5046d6593652b3d2b', 2),
+('sasa', 'sasa@gmail.com', '085214262011', 'f45731e3d39a1b2330bbf93e9b3de59e', 2);
 
 --
 -- Indexes for dumped tables
@@ -377,6 +424,13 @@ ALTER TABLE `menu_pesanan`
   ADD KEY `fq_menupes2` (`id_menu`);
 
 --
+-- Indexes for table `payment`
+--
+ALTER TABLE `payment`
+  ADD PRIMARY KEY (`id_payment`),
+  ADD KEY `fk_payment1` (`id_pesanan`);
+
+--
 -- Indexes for table `pesanan`
 --
 ALTER TABLE `pesanan`
@@ -407,68 +461,86 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `book`
 --
 ALTER TABLE `book`
-  MODIFY `id_book` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id_book` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+
 --
 -- AUTO_INCREMENT for table `level_access`
 --
 ALTER TABLE `level_access`
   MODIFY `id_level_access` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT for table `menu`
 --
 ALTER TABLE `menu`
   MODIFY `id_menu` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=616;
+
+--
+-- AUTO_INCREMENT for table `payment`
+--
+ALTER TABLE `payment`
+  MODIFY `id_payment` int(6) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `pesanan`
 --
 ALTER TABLE `pesanan`
-  MODIFY `id_pesanan` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id_pesanan` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+
 --
 -- AUTO_INCREMENT for table `review`
 --
 ALTER TABLE `review`
   MODIFY `id_review` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Constraints for dumped tables
 --
 
 --
--- Ketidakleluasaan untuk tabel `book`
+-- Constraints for table `book`
 --
 ALTER TABLE `book`
   ADD CONSTRAINT `fq_book1` FOREIGN KEY (`id_meja`) REFERENCES `meja` (`id_meja`),
   ADD CONSTRAINT `fq_book2` FOREIGN KEY (`id_pesanan`) REFERENCES `pesanan` (`id_pesanan`);
 
 --
--- Ketidakleluasaan untuk tabel `menu`
+-- Constraints for table `menu`
 --
 ALTER TABLE `menu`
   ADD CONSTRAINT `fq_menu` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`);
 
 --
--- Ketidakleluasaan untuk tabel `menu_pesanan`
+-- Constraints for table `menu_pesanan`
 --
 ALTER TABLE `menu_pesanan`
   ADD CONSTRAINT `fq_menupes1` FOREIGN KEY (`id_pesanan`) REFERENCES `pesanan` (`id_pesanan`),
   ADD CONSTRAINT `fq_menupes2` FOREIGN KEY (`id_menu`) REFERENCES `menu` (`id_menu`);
 
 --
--- Ketidakleluasaan untuk tabel `pesanan`
+-- Constraints for table `payment`
+--
+ALTER TABLE `payment`
+  ADD CONSTRAINT `fk_payment1` FOREIGN KEY (`id_pesanan`) REFERENCES `pesanan` (`id_pesanan`);
+
+--
+-- Constraints for table `pesanan`
 --
 ALTER TABLE `pesanan`
   ADD CONSTRAINT `fk_username` FOREIGN KEY (`username`) REFERENCES `users` (`username`);
 
 --
--- Ketidakleluasaan untuk tabel `review`
+-- Constraints for table `review`
 --
 ALTER TABLE `review`
   ADD CONSTRAINT `fq_rev` FOREIGN KEY (`username`) REFERENCES `users` (`username`);
 
 --
--- Ketidakleluasaan untuk tabel `users`
+-- Constraints for table `users`
 --
 ALTER TABLE `users`
   ADD CONSTRAINT `fq_user1` FOREIGN KEY (`id_level_access`) REFERENCES `level_access` (`id_level_access`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
