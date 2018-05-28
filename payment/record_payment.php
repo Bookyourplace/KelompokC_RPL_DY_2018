@@ -50,3 +50,4 @@
            <th>Date</th>
            <th>Time</th>
            <th>People</th>
+           <th>Table</th>
