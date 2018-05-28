@@ -11,6 +11,8 @@
     $harga = htmlentities(strip_tags($_POST['harga']));
 
     //$sql = "INSERT INTO menu(id_menu, nama_menu, id_kategori, harga) values('$id_menu', '$nama_menu', '$id_kategori', '$harga')";
+    
+    $sql =sprintf("INSERT INTO menu(id_menu, nama_menu, id_kategori, harga) values('%s', '%s', '%s', '%s')",$id_menu, $nama_menu, $tes,$harga);
     $status = mysqli_query($link, $sql);
 
 
