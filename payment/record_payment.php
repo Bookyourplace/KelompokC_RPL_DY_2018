@@ -51,3 +51,4 @@
            <th>Time</th>
            <th>People</th>
            <th>Table</th>
+           <th>Detail</th>
