@@ -13,3 +13,11 @@
         $passwordlama = mysqli_real_escape_string($link,$_POST['passwordlama']);
         $passwordbaru= mysqli_real_escape_string($link,$_POST['passwordbaru']);
         $confirmpassword= mysqli_real_escape_string($link,$_POST['confirmpassword']);
+        
+         //pastikan form diisi
+         $cek=mysqli_query($link,"select password from users where email='$email'");
+         $passwordlama = md5($_POST['passwordlama']);
+         if(mysqli_num_rows($cek)<0){
+           echo "<script>alert('Password Lama Tidak Sesuai');history.go(-1);</script>";
+           return;
+         }
