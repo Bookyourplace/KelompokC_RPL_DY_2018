@@ -26,3 +26,10 @@
         if($passwordbaru != $confirmpassword){
             ++$errors;
             echo "Password tidak cocok !!!<br>";
+        }
+        //echo "Jumlah Error : ".$errors."<br>";
+        if($errors==0){
+          $passwordbaru = md5($_POST['passwordbaru']);
+          $result = mysqli_query($link, "UPDATE users SET password='$passwordbaru' where email='$email'");
+          if($result){
+            echo "<script>alert('Reset Password Berhasil');history.go(-1);</script>";
