@@ -96,3 +96,5 @@
                       <input id="register-agree" name="registerAgree" type="checkbox" required value="1" data-msg="Your agreement is required" class="checkbox-template">
                       <label for="register-agree">Agree the terms and policy</label>
                     </div>-->
+                    <div class="form-group">
+                      <button id="register" type="submit" name="reset"  class="btn btn-primary">Reset</button>
