@@ -65,3 +65,12 @@
                     <td style="text-align: left;"><?php echo $rs['date']; ?></td>
                     <td style="text-align: left;"><?php echo $rs['time']; ?></td>
                     <td style="text-align: left;"><?php echo $rs['people']; ?></td>
+                    <td style="text-align: left;"><?php echo $rs['id_meja']; ?></td>
+
+                    <td>
+                      <a href="<?php echo $config['site_url'] ?>payment/detail_payment.php?id_order=<?php echo $rs['id_pesanan']; ?>" class="btn btn-primary">Detail</a>
+                    </td>
+                </tr>
+                    <?php
+                        }
+                    ?>
