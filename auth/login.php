@@ -89,7 +89,7 @@ if (isset($_POST['submitButton'])){
                     
                     
                     <!-- This should be submit button but I replaced it with <a> for demo purposes-->
-                  </form><a href="#" class="forgot-pass">Forgot Password?</a><br><small>Do not have an account? </small><a href="register.php" class="signup">Signup</a>
+                  </form><a href="reset.php" class="forgot-pass">Forgot Password?</a><br><small>Do not have an account? </small><a href="register.php" class="signup">Signup</a>
                 </div>
               </div>
             </div>
