@@ -19,7 +19,7 @@
     if ($status) {
       $_SESSION['status_proses'] = "Menu Berhasil ditambahkan.";
     }else{
-      $_SESSION['status_proses'] = "Menu Gagal ditambahkan: ".mysqli_error($link);
+      $_SESSION['status_proses'] = "Menu Gagal ditambahkan: ".$sql."id".$tes."sy".$syntaxKategori;
     }
 
     header('Location:list_menu.php');
