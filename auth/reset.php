@@ -98,3 +98,11 @@
                     </div>-->
                     <div class="form-group">
                       <button id="register" type="submit" name="reset"  class="btn btn-primary">Reset</button>
+                      </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
