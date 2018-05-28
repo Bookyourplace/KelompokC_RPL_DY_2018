@@ -87,3 +87,4 @@
   <?php include '../includes/user/footer.php'?>
 
   <!-- Back to top -->
+  <div class="btn-back-to-top bg0-hov" id="myBtn">
