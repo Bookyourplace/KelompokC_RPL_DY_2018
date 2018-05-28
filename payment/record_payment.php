@@ -84,3 +84,4 @@
   </section>
 
   <!-- Footer -->
+  <?php include '../includes/user/footer.php'?>
