@@ -10,7 +10,7 @@
     $id_kategori = htmlentities(strip_tags($_POST['id_kategori']));
     $harga = htmlentities(strip_tags($_POST['harga']));
 
-    $sql = "INSERT INTO menu(id_menu, nama_menu, id_kategori, harga) values('$id_menu', '$nama_menu', '$id_kategori', '$harga')";
+    //$sql = "INSERT INTO menu(id_menu, nama_menu, id_kategori, harga) values('$id_menu', '$nama_menu', '$id_kategori', '$harga')";
     $status = mysqli_query($link, $sql);
 
 
