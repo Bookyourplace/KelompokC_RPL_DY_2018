@@ -82,3 +82,8 @@
                       <input id="register-password" type="password" name="passwordlama" required data-msg="Please enter your password" class="input-material">
                       <label for="register-password" class="label-material"> Password Lama</label>
                     </div>
+                    
+                    <div class="form-group">
+                      <input id="register-password" type="password" name="passwordbaru" required data-msg="Please enter your new password" class="input-material">
+                      <label for="register-password" class="label-material">Password Baru</label>
+                    </div>
