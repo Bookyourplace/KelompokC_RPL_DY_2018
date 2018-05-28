@@ -33,3 +33,9 @@
           $result = mysqli_query($link, "UPDATE users SET password='$passwordbaru' where email='$email'");
           if($result){
             echo "<script>alert('Reset Password Berhasil');history.go(-1);</script>";
+
+        }else{   echo "<script>alert('Reset Password Gagal');history.go(-1);</script>";  }
+    }
+  }
+  ?>
+
