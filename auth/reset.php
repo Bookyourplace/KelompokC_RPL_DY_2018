@@ -64,3 +64,9 @@
                 <div class="content">
                   <div class="logo">
                     <h1>BookYourPlace</h1>
+                    </div>
+                  <p>Web Reservasi tempat dan Pemesanan Makanan di Cafe Grand Aceh Kuliner.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Form Panel    -->
