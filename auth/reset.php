@@ -21,3 +21,8 @@
            echo "<script>alert('Password Lama Tidak Sesuai');history.go(-1);</script>";
            return;
          }
+
+         
+        if($passwordbaru != $confirmpassword){
+            ++$errors;
+            echo "Password tidak cocok !!!<br>";
