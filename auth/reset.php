@@ -70,3 +70,8 @@
               </div>
             </div>
             <!-- Form Panel    -->
+            <div class="col-lg-6 bg-white">
+              <div class="form d-flex align-items-center">
+                <div class="content">
+                  <form method="post" action ="reset.php" class="form-validate">
+                    <div class="form-group">
