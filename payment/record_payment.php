@@ -63,3 +63,4 @@
                 <tr>
                     <td style="text-align: left;"><?php echo $rs['id_pesanan']; ?></td>
                     <td style="text-align: left;"><?php echo $rs['date']; ?></td>
+                    <td style="text-align: left;"><?php echo $rs['time']; ?></td>
