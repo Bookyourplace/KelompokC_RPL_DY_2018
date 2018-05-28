@@ -58,3 +58,9 @@
       <div class="container d-flex align-items-center">
         <div class="form-holder has-shadow">
           <div class="row">
+           <!-- Logo & Information Panel-->
+           <div class="col-lg-6">
+              <div class="info d-flex align-items-center">
+                <div class="content">
+                  <div class="logo">
+                    <h1>BookYourPlace</h1>
