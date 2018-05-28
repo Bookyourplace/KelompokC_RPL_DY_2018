@@ -54,3 +54,7 @@
 
   </head>
   <body>
+  <div class="page login-page">
+      <div class="container d-flex align-items-center">
+        <div class="form-holder has-shadow">
+          <div class="row">
