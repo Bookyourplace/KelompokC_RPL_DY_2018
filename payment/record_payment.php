@@ -55,5 +55,5 @@
            </tr>
 
            <?php
-
+                $q = "SELECT pesanan.id_pesanan, pesanan.date, pesanan.time, pesanan.people, book.id_meja FROM pesanan, book WHERE pesanan.id_pesanan=book.id_pesanan  AND pesanan.username='".$_SESSION['login_user']."'";
            ?>
