@@ -22,7 +22,6 @@
            return;
          }
 
-         
         if($passwordbaru != $confirmpassword){
             ++$errors;
             echo "Password tidak cocok !!!<br>";
