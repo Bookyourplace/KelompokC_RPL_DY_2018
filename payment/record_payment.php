@@ -46,12 +46,12 @@
          <div class="container">
           <table class="table table-hover">
            <tr>
-           <th>ID Order</th>
-           <th>Date</th>
-           <th>Time</th>
-           <th>People</th>
-           <th>Table</th>
-           <th>Detail</th>
+                <th>ID Order</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>People</th>
+                <th>Table</th>
+                <th>Detail</th>
            </tr>
 
            <?php
@@ -59,3 +59,6 @@
                 $query = mysqli_query($link, $q);
                 while ($rs = mysqli_fetch_array ($query)) {
            ?>
+
+                <tr>
+                    <td style="text-align: left;"><?php echo $rs['id_pesanan']; ?></td>
