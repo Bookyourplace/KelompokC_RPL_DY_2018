@@ -52,3 +52,4 @@
            <th>People</th>
            <th>Table</th>
            <th>Detail</th>
+           </tr>
