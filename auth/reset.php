@@ -115,3 +115,6 @@
     <!-- JavaScript files-->
     
    <?php include '../includes/admin/js.php'?>
+
+  </body>
+</html>
