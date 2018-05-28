@@ -40,3 +40,5 @@
          </span>
 
          <h3 class="tit3 t-center m-b-35 m-t-2">
+           PAYMENT RECORD
+         </h3>
