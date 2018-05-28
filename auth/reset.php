@@ -75,3 +75,6 @@
                 <div class="content">
                   <form method="post" action ="reset.php" class="form-validate">
                     <div class="form-group">
+                    <input id="register-email" type="email" name="email" required data-msg="Please enter a valid email address" class="input-material">
+                        <label for="register-email" class="label-material">Email Address      </label>
+                      </div>
