@@ -49,3 +49,4 @@
            <th>ID Order</th>
            <th>Date</th>
            <th>Time</th>
+           <th>People</th>
