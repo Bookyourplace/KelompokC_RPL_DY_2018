@@ -44,3 +44,4 @@
          </h3>
 
          <div class="container">
+          <table class="table table-hover">
