@@ -92,3 +92,7 @@
                       <input id="register-password" type="password" name="confirmpassword" required data-msg="Please enter confirm password" class="input-material">
                       <label for="register-password" class="label-material">Confirm Password</label>
                     </div>
+                     <!--<div class="form-group terms-conditions">
+                      <input id="register-agree" name="registerAgree" type="checkbox" required value="1" data-msg="Your agreement is required" class="checkbox-template">
+                      <label for="register-agree">Agree the terms and policy</label>
+                    </div>-->
