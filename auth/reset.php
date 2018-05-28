@@ -6,4 +6,5 @@
         $result = mysqli_query($link, "SELECT * FROM users");
     
          //query berikut akan jalan jika button Ubah Password diklik
-         
+         if(isset($_POST['reset'])){
+            $errors = 0;
