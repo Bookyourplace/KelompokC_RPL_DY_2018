@@ -78,3 +78,7 @@
                     <input id="register-email" type="email" name="email" required data-msg="Please enter a valid email address" class="input-material">
                         <label for="register-email" class="label-material">Email Address      </label>
                       </div>
+                      <div class="form-group">
+                      <input id="register-password" type="password" name="passwordlama" required data-msg="Please enter your password" class="input-material">
+                      <label for="register-password" class="label-material"> Password Lama</label>
+                    </div>
