@@ -33,5 +33,6 @@
     <section class="section-reservation bg1-pattern p-t-100 p-b-113">
     <div class="">
     <div class="row">
-            <div class="col-lg-12 p-b-30">
+    <div class="col-lg-12 p-b-30">
+    <div class="t-center">
             
