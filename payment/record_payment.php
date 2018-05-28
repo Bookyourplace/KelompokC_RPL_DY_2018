@@ -53,3 +53,7 @@
            <th>Table</th>
            <th>Detail</th>
            </tr>
+
+           <?php
+
+           ?>
