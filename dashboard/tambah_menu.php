@@ -15,6 +15,13 @@
     $query=mysqli_query($link,$syntax)
     $tes;
 
+    if(mysqli_num_rows($query)>0){
+        while($data=mysqli_fetch_array($query)){
+            $tes=$data["id_kategori"];
+            //echo $tes;
+        }
+    }
+
     $sql =sprintf("INSERT INTO menu(id_menu, nama_menu, id_kategori, harga) values('%s', '%s', '%s', '%s')",$id_menu, $nama_menu, $tes,$harga);
     $status = mysqli_query($link, $sql);
 
