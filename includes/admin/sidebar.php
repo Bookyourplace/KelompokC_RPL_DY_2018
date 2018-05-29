@@ -3,9 +3,9 @@
           <div class="sidebar-header d-flex align-items-center">
             <div class="avatar"><img src="<?php echo $config['site_url']?>assets/admin/img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
             <div class="title">
-              <h1 class="h4">Mark Stephen</h1>
-              <p>Web Designer</p>
-            </div>-->
+              <h1 class="h4">Reza Wahyu</h1>
+              <p>Admin</p>
+            </div>
           </div>
           <!-- Sidebar Navidation Menus--><!--<span class="heading">Main</span>-->
           <ul class="list-unstyled">
