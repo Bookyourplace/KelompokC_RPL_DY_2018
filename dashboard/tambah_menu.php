@@ -108,6 +108,14 @@
                                                     <label class="col-sm-2 control-label">Id Kategori</label>
                                                     <div class="col-sm-9">
                                                         <select class="selection-1" name="id_kategori">
+                                                            <?php
+                                                                $syntax=sprintf(" select * from kategori order by id_kategori");
+                                                                $query=mysqli_query($link,$syntax);
+
+                                                                while($data=mysqli_fetch_assoc($query)){
+                                                                    echo '<option>'.$data["jenis_kategori"].'</option>';
+                                                                }
+                                                            ?>
                                                             <!-- <option>1</option>
                                                             <option>2</option>
                                                             <option>3</option>
