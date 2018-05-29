@@ -76,8 +76,7 @@
                     </ul>
             </div>
                 <!-- Container fluid  -->
-                <br></br>
-                <br></br>
+                
                 <br></br>
                 <br></br>
                 <div class="container-fluid">
