@@ -41,7 +41,7 @@
             </div>
           </header>
     
-          
+         <!--Dashboard Counts Section--> 
           <!-- Page Footer-->
 
           <?php include '../includes/admin/footer.php'?>
