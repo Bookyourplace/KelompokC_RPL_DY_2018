@@ -48,6 +48,7 @@
                     <li class="breadcrumb-item active">List Menu            </li>
                     </ul>
                 </div>
+                <br>
 
                 <!--alert utk notifikasi berhasil atau enggak-->
                 <?php
@@ -61,10 +62,10 @@
                 ?>
 
                 <div>
-                    <table align="center" border="5"  cellpadding="3" style="width:60%">
+                    <table align="center" border="1"  cellpadding="3" style="width:60%" >
                         <thead>
-                            <tr align="center" height="80">
-                            <th>No</th>
+                            <tr align="center" height="80" style="background-color: white;">
+                            <th style="width:55px">No</th>
                             <th>Id Menu</th>
                             <th>Nama Menu</th>
                             <th>Id Kategori</th>
@@ -76,7 +77,7 @@
                             <?php
                             for ($i = 1; $row = mysqli_fetch_assoc($data); $i++) :
                             ?>
-                            <tr>
+                            <tr style="background-color: #C3DBC5;">
                                 <td align="center"><?php echo $i; ?></td>
                                 <td align="center"><?php echo $row['id_menu']; ?></td>
                                 <td ><?php echo $row['nama_menu']; ?></td>
@@ -98,11 +99,12 @@
                 <br>
                 <div><table border="1" style="width:100%">
 
-                <?php include '../includes/admin/footer.php'?>
-
+                
+                <?php include '../includes/admin/footer.php'?> 
                 </div>
             </div>
         </div>
+                     
         <?php include '../includes/admin/js.php'?>
     </body>
  </html>
