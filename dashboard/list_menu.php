@@ -64,7 +64,7 @@
                 <div>
                     <table align="center" border="5"  cellpadding="3" style="width:60%" >
                         <thead>
-                            <tr align="center" height="80" >
+                            <tr align="center" height="80" style="background-color: white;">
                             <th>No</th>
                             <th>Id Menu</th>
                             <th>Nama Menu</th>
