@@ -77,7 +77,7 @@
                             <?php
                             for ($i = 1; $row = mysqli_fetch_assoc($data); $i++) :
                             ?>
-                            <tr>
+                            <tr style="background-color: #C3DBC5;">
                                 <td align="center"><?php echo $i; ?></td>
                                 <td align="center"><?php echo $row['id_menu']; ?></td>
                                 <td ><?php echo $row['nama_menu']; ?></td>
