@@ -12,7 +12,7 @@
 
     //$sql = "INSERT INTO menu(id_menu, nama_menu, id_kategori, harga) values('$id_menu', '$nama_menu', '$id_kategori', '$harga')";
     
-    $sql =sprintf("INSERT INTO menu(id_menu, nama_menu, id_kategori, harga) values('%s', '%s', '%s', '%s')",$id_menu, $nama_menu, $tes,$harga);
+    $syntax=sprintf("select id_kategori from kategori where jenis_kategori='%s'",$id_kategori);    
     $status = mysqli_query($link, $sql);
 
 
