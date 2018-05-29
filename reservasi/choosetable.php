@@ -93,7 +93,11 @@
 									}
 								?>
 									  <td name="tabel1"><input type="checkbox" name="meja[]" value="1"> <?php echo $row['id_meja']; ?></td>
-								
+								<?php
+									if($i % 5 == 0){
+										echo '</tr><tr>';
+									}
+								?>
 									  
 								</table>
 								<div class="wrap-btn-booking flex-c-m m-t-6">
