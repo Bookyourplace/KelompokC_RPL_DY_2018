@@ -9,6 +9,9 @@
 		header('Location: ' . $config['site_url'] . 'reservasi/reservation.php'); // redirect user ke halaman reservasi agar isi reservasi dulu
 	}
 
+	$sql = "SELECT * FROM meja";
+	$data = mysqli_query($link, $sql);
+
 	// jika ada post submit ada
 	if(isset($_POST['submit'])){
 		$_SESSION['choose_table'] = $_POST; // masukkan data post dari user ke dalam session choose table
