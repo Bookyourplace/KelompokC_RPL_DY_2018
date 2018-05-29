@@ -87,6 +87,12 @@
 							<?php
           						for ($i = 1; $row = mysqli_fetch_assoc($data); $i++) :
 							?>
+								<?php
+									if($i == 0){
+										echo '<tr>';
+									}
+								?>
+									  <td name="tabel1"><input type="checkbox" name="meja[]" value="1"> <?php echo $row['id_meja']; ?></td>
 								
 									  
 								</table>
