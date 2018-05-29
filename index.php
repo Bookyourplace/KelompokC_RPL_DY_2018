@@ -66,7 +66,7 @@
 				</div>
 
 				<div class="item-slick1 item3-slick1" style="background-image: url(<?php echo $config['site_url']?>assets/users/images/gambar3.jpg);">
-					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170"> <!-- slider konten di home -->
 						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="rotateInDownLeft">
 							Welcome to
 						</span>
@@ -96,9 +96,6 @@
 			<div class="row">
 				<div class="col-md-6 p-t-45 p-b-30">
 					<div class="wrap-text-welcome t-center">
-						<!--<span class="tit2 t-center">
-							Italian Restaurant
-						</span>-->
 
 						<h3 class="tit3 t-center m-b-35 m-t-5">
 							About Us
