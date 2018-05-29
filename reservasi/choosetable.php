@@ -98,7 +98,8 @@
 										echo '</tr><tr>';
 									}
 								?>
-									  
+									<?php endfor; ?>
+								  	<?php echo '</tr>'; ?>
 								</table>
 								<div class="wrap-btn-booking flex-c-m m-t-6">
 									<!-- Button3 -->
