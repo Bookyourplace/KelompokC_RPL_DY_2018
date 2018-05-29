@@ -62,7 +62,7 @@
                 ?>
 
                 <div>
-                    <table align="center" border="5"  cellpadding="3" style="width:60%" >
+                    <table align="center" border="1"  cellpadding="3" style="width:60%" >
                         <thead>
                             <tr align="center" height="80" style="background-color: white;">
                             <th style="width:55px">No</th>
