@@ -65,7 +65,7 @@
                     <table align="center" border="5"  cellpadding="3" style="width:60%" >
                         <thead>
                             <tr align="center" height="80" style="background-color: white;">
-                            <th>No</th>
+                            <th style="width:55px">No</th>
                             <th>Id Menu</th>
                             <th>Nama Menu</th>
                             <th>Id Kategori</th>
