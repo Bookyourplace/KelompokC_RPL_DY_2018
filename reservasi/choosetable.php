@@ -84,6 +84,9 @@
    <div class="container">
 		 		<form method="post">
 							<table class = "tabel">
+							<?php
+          						for ($i = 1; $row = mysqli_fetch_assoc($data); $i++) :
+							?>
 								
 									  
 								</table>
