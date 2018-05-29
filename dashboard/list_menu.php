@@ -62,9 +62,9 @@
                 ?>
 
                 <div>
-                    <table align="center" border="5"  cellpadding="3" style="width:60%">
+                    <table align="center" border="5"  cellpadding="3" style="width:60%" >
                         <thead>
-                            <tr align="center" height="80">
+                            <tr align="center" height="80" >
                             <th>No</th>
                             <th>Id Menu</th>
                             <th>Nama Menu</th>
@@ -99,11 +99,12 @@
                 <br>
                 <div><table border="1" style="width:100%">
 
-                <?php include '../includes/admin/footer.php'?>
-
+                
+                <?php include '../includes/admin/footer.php'?> 
                 </div>
             </div>
         </div>
+                     
         <?php include '../includes/admin/js.php'?>
     </body>
  </html>
