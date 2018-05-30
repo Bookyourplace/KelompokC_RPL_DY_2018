@@ -42,6 +42,11 @@
           </header>
     
          <!--Dashboard Counts Section--> 
+         <!-- Dashboard Counts Section-->
+         <section class="dashboard-counts no-padding-bottom" >
+            <div class="container-fluid">
+              <div class="row bg-white has-shadow">
+                <!-- Item -->
           <!-- Page Footer-->
 
           <?php include '../includes/admin/footer.php'?>
