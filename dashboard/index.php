@@ -97,6 +97,26 @@
                     <div class="number"><strong><?php echo $data['count(*)'] ?></strong></div>
                   </div>
                 </div>
+                 <!-- Item -->
+                 <div class="col-xl-3 col-sm-6">
+                  <div class="item d-flex align-items-center">
+                    <div class="icon bg-orange"><i class="icon-check"></i></div>
+                    <div class="title"><span>Total<br>Menu</span>
+                      <div class="progress">
+                        <?php 
+                        $query="select count(*) from menu";
+                        $data=mysqli_query($link,$query);
+                        $data = $data->fetch_assoc();
+                        ?>
+                        <div role="progressbar" style="width: 50%; height: 4px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-orange"></div>
+                      </div>
+                    </div>
+                    <div class="number"><strong><?php echo $data['count(*)'] ?></strong></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           <!-- Page Footer-->
 
           <?php include '../includes/admin/footer.php'?>
