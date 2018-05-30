@@ -7,6 +7,7 @@
     die();
   }
   
+  
   if (isset($_POST['submit'])) {
     $nama_menu = htmlentities(strip_tags($_POST['nama_menu']));
     $harga = htmlentities(strip_tags($_POST['harga']));
@@ -78,8 +79,7 @@
        <!-- Container fluid  -->
        <br></br>
        <br></br>
-       <br></br>
-       <br></br>
+      
        <div class="container-fluid">
        <!-- Start Page Content -->
             <div class="row">
