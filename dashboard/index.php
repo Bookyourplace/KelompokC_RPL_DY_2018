@@ -80,6 +80,23 @@
                     <div class="number"><strong><?php echo $data['count(*)'] ?></strong></div>
                   </div>
                 </div>
+                 <!-- Item -->
+                 <div class="col-xl-3 col-sm-6">
+                  <div class="item d-flex align-items-center">
+                    <div class="icon bg-green"><i class="icon-bill"></i></div>
+                    <div class="title"><span>Total<br>Review</span>
+                      <div class="progress">
+                        <?php 
+                        $query="select count(*) from review";
+                        $data=mysqli_query($link,$query);
+                        $data = $data->fetch_assoc();
+                        ?>
+                        <div role="progressbar" style="width: 10%; height: 4px;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-green"></div>
+                      </div>
+                    </div>
+                    <div class="number"><strong><?php echo $data['count(*)'] ?></strong></div>
+                  </div>
+                </div>
           <!-- Page Footer-->
 
           <?php include '../includes/admin/footer.php'?>
