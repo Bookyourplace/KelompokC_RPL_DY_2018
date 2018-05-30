@@ -117,6 +117,10 @@
               </div>
             </div>
           </section>
+           <!-- Dashboard Header Section    -->
+           <section class="dashboard-header">
+            <div class="container-fluid">
+              <div class="row">
           <!-- Page Footer-->
 
           <?php include '../includes/admin/footer.php'?>
