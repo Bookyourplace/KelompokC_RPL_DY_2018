@@ -47,6 +47,22 @@
             <div class="container-fluid">
               <div class="row bg-white has-shadow">
                 <!-- Item -->
+                <div class="col-xl-3 col-sm-6">
+                  <div class="item d-flex align-items-center">
+                    <div class="icon bg-violet"><i class="icon-user"></i></div>
+                    <div class="title"><span>Total<br>Users</span>
+                      <div class="progress">
+                      <?php 
+                      $user="select count(username) from users where id_level_access=2";
+                      $userq=mysqli_query($link,$user);
+                      $userq = $userq->fetch_assoc();
+                      ?>
+                        <div role="progressbar" style="width: 15%; height: 4px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" class="progress-bar bg-violet"></div>
+                      </div>
+                    </div>
+                    <div class="number"><strong><?php echo $userq['count(username)'] ?></strong></div>
+                  </div>
+                </div>
           <!-- Page Footer-->
 
           <?php include '../includes/admin/footer.php'?>
