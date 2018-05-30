@@ -21,7 +21,7 @@ body {
 a,
 i,
 span {
-  display: inline-block;
+  display: inline-block;  
   text-decoration: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -251,7 +251,7 @@ input {
 }
 
 .bg-white {
-  background: #fff !important;
+  background: ##222222ef !important;
 }
 
 .text-red {
@@ -958,7 +958,7 @@ section.dashboard-counts .icon {
 section.dashboard-counts .title {
   font-size: 1.1em;
   font-weight: 300;
-  color: #777;
+  color: black);
   margin: 0 20px;
 }
 
@@ -2234,7 +2234,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #222222ef;
   background-color: #fff;
 }
 
