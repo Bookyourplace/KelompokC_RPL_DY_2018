@@ -2,12 +2,11 @@
     //session_start(); // di sini kita buat session start
 
     include '../konfig/config.php'; 
+    require '../konfig/koneksi.php'; 
     // tapi taruh posisinya setelah include konfig config.php ini
     // karena di file cek belum login kita ada pakai variablenya
     include '../konfig/cek_belum_login.php'; // di dalam include file ini juga ada session start
 ?>
-
-
 
 <!DOCTYPE html>
 <html>
@@ -18,11 +17,12 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="all,follow">
+    
 
   <?php include '../includes/admin/css.php'?>
 
   </head>
-  <body>
+  <body >
     <div class="page">
       <!-- Main Navbar-->
     
@@ -40,10 +40,8 @@
               <h2 class="no-margin-bottom">Dashboard</h2>
             </div>
           </header>
-    
-         <!--Dashboard Counts Section--> 
-         <!-- Dashboard Counts Section-->
-         <section class="dashboard-counts no-padding-bottom" >
+              <!-- Dashboard Counts Section-->
+            <section class="dashboard-counts no-padding-bottom" >
             <div class="container-fluid">
               <div class="row bg-white has-shadow">
                 <!-- Item -->
@@ -80,8 +78,8 @@
                     <div class="number"><strong><?php echo $data['count(*)'] ?></strong></div>
                   </div>
                 </div>
-                 <!-- Item -->
-                 <div class="col-xl-3 col-sm-6">
+                <!-- Item -->
+                <div class="col-xl-3 col-sm-6">
                   <div class="item d-flex align-items-center">
                     <div class="icon bg-green"><i class="icon-bill"></i></div>
                     <div class="title"><span>Total<br>Review</span>
@@ -97,8 +95,8 @@
                     <div class="number"><strong><?php echo $data['count(*)'] ?></strong></div>
                   </div>
                 </div>
-                 <!-- Item -->
-                 <div class="col-xl-3 col-sm-6">
+                <!-- Item -->
+                <div class="col-xl-3 col-sm-6">
                   <div class="item d-flex align-items-center">
                     <div class="icon bg-orange"><i class="icon-check"></i></div>
                     <div class="title"><span>Total<br>Menu</span>
@@ -117,12 +115,12 @@
               </div>
             </div>
           </section>
-           <!-- Dashboard Header Section    -->
-           <section class="dashboard-header">
+          <!-- Dashboard Header Section    -->
+          <section class="dashboard-header">
             <div class="container-fluid">
               <div class="row">
-              <!-- Statistics -->
-              <div class="statistics col-lg-3 col-12">
+                <!-- Statistics -->
+                <div class="statistics col-lg-3 col-12">
                   <div class="statistic d-flex align-items-center bg-white has-shadow">
                     <div class="icon bg-red"><i class="fa fa-users"></i></div>
                     <div class="text"><strong>15</strong><br><small>Jumlah Pelayan</small></div>
@@ -141,6 +139,8 @@
             
           
     
+    
+          
           <!-- Page Footer-->
 
           <?php include '../includes/admin/footer.php'?>
