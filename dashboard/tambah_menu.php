@@ -10,14 +10,16 @@
     $id_kategori = htmlentities(strip_tags($_POST['id_kategori']));
     $harga = htmlentities(strip_tags($_POST['harga']));
 
-    $sql = "INSERT INTO menu(id_menu, nama_menu, id_kategori, harga) values('$id_menu', '$nama_menu', '$id_kategori', '$harga')";
+    //$sql = "INSERT INTO menu(id_menu, nama_menu, id_kategori, harga) values('$id_menu', '$nama_menu', '$id_kategori', '$harga')";
+    
+    $sql =sprintf("INSERT INTO menu(id_menu, nama_menu, id_kategori, harga) values('%s', '%s', '%s', '%s')",$id_menu, $nama_menu, $tes,$harga);
     $status = mysqli_query($link, $sql);
 
 
     if ($status) {
       $_SESSION['status_proses'] = "Menu Berhasil ditambahkan.";
     }else{
-      $_SESSION['status_proses'] = "Menu Gagal ditambahkan: ".mysqli_error($link);
+      $_SESSION['status_proses'] = "Menu Gagal ditambahkan: ".$sql."id".$tes."sy".$syntaxKategori;
     }
 
     header('Location:list_menu.php');
