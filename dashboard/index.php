@@ -121,6 +121,26 @@
            <section class="dashboard-header">
             <div class="container-fluid">
               <div class="row">
+              <!-- Statistics -->
+              <div class="statistics col-lg-3 col-12">
+                  <div class="statistic d-flex align-items-center bg-white has-shadow">
+                    <div class="icon bg-red"><i class="fa fa-users"></i></div>
+                    <div class="text"><strong>15</strong><br><small>Jumlah Pelayan</small></div>
+                  </div>
+                  <div class="statistic d-flex align-items-center bg-white has-shadow">
+                    <div class="icon bg-green"><i class="fa fa-user-o"></i></div>
+                    <div class="text"><strong>6</strong><br><small>Jumlah Koki</small></div>
+                  </div>
+                  
+              </div>
+            </div>
+          </section>
+         
+          
+                  
+            
+          
+    
           <!-- Page Footer-->
 
           <?php include '../includes/admin/footer.php'?>
