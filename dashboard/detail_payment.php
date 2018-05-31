@@ -93,3 +93,4 @@
                         <tr>
                                 <td align="center"><?php echo $i; ?>.</td>
                                 <td><?php echo $row["nama_menu"]; ?></td>
+                                <td>Rp <?php echo str_replace(",", ".", number_format($row['harga_pesanan_persatuan'])); ?></td>
