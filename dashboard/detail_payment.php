@@ -129,3 +129,5 @@
                         </div>
                     </div>
                 </div>
+<br>
+<?php include '../includes/admin/footer.php'?>
