@@ -1,4 +1,5 @@
 <nav class="side-navbar">
+      
           <!-- Sidebar Header-->
           <div class="sidebar-header d-flex align-items-center">
             <div class="avatar"><img src="<?php echo $config['site_url']?>assets/admin/img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle"></div>
@@ -7,11 +8,11 @@
               <p>Admin</p>
             </div>
           </div>
-          <!-- Sidebar Navidation Menus--><!--<span class="heading">Main</span>-->
+          <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
           <ul class="list-unstyled">
                     <li><a href="index.php"> <i class="icon-home"></i>Home </a></li>
                     <li><a href="data_user.php"> <i class="icon-user"></i>Data User </a></li>
-                    <li class="active"><a href="reservasi.php"> <i class="icon-grid"></i>Reservasi </a></li>
+                    <li><a href="reservasi.php"> <i class="icon-grid"></i>Reservasi </a></li>        
                     <li><a href="review.php"> <i class="icon-padnote"></i>Review </a></li>
                     <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Menu </a>
                       <ul id="exampledropdownDropdown" class="collapse list-unstyled ">

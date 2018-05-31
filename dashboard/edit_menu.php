@@ -7,6 +7,7 @@
     die();
   }
   
+  
   if (isset($_POST['submit'])) {
     $nama_menu = htmlentities(strip_tags($_POST['nama_menu']));
     $harga = htmlentities(strip_tags($_POST['harga']));
