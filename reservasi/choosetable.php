@@ -88,6 +88,11 @@
 						<div style="font-size: 16px">
 							<!-- <table> -->
 								<!-- <tr> -->
+									Date <?php echo $date ?>
+									Time <?php echo $time ?>
+								<!-- </tr> -->
+							<!-- </table> -->
+						</div>
 					</div>
 	</section>
 
