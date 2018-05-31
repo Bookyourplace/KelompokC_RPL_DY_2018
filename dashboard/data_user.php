@@ -65,5 +65,5 @@
 
                   <tbody>
                             <?php
-                                
+                            for ($i = 1; $row = mysqli_fetch_assoc($data); $i++) :
                             ?>
