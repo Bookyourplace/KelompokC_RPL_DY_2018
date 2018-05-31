@@ -56,5 +56,5 @@
                    <?php
                     $q = "SELECT book.id_meja, menu.nama_menu, menu_pesanan.quant, menu_pesanan.harga_pesanan_persatuan FROM pesanan JOIN book ON pesanan.id_pesanan= book.id_pesanan JOIN menu_pesanan ON pesanan.id_pesanan=menu_pesanan.id_pesanan JOIN menu ON menu_pesanan.id_menu=menu.id_menu WHERE pesanan.id_pesanan='".$_GET['id_order']."'";
                     $query = mysqli_query($link, $q);
-                    while ($rs = mysqli_fetch_array ($query)) {
+                    while ($rs = mysqli_fetch_assoc  ($query)) {
                    ?>
