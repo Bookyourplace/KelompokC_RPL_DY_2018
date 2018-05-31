@@ -86,3 +86,5 @@
                             $sql = "SELECT menu_pesanan.quant, menu_pesanan.harga_pesanan_persatuan, menu.nama_menu, (menu_pesanan.quant * menu_pesanan.harga_pesanan_persatuan) as amount FROM `menu_pesanan` join menu on menu.id_menu = menu_pesanan.id_menu where id_pesanan = $id_pesanan";
                             $data = mysqli_query($link, $sql);
                             $total = 0;
+
+                            for ($i=1; $row = mysqli_fetch_assoc($data); $i++) {
