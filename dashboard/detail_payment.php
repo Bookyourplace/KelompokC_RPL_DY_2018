@@ -122,3 +122,10 @@
                                     <label for="kembalian">Kembalian</label>
                                     <input type="text" name="kembalian" class="form-control" id="exampleInputPassword1" disabled>
                                 </div>
+                                <div class="text-right">
+                                    <button type="submit" name="submit" class="btn btn-primary">Bayar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
