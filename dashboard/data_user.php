@@ -12,3 +12,6 @@
     <!--css-->
     <?php include '../includes/admin/css.php'; ?>
     </head>
+
+    <body>
+  <div class="page">
