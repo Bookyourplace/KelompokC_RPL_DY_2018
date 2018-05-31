@@ -19,7 +19,4 @@
                         <li><a href="<?php echo $config['site_url'] ?>dashboard/tambah_menu.php">Tambah Menu</a></li>
                         <!--<li><a href="#">Page</a></li>-->
                       </ul>
-                    </li>
-                    <li><a href="login.php"> <i class="icon-interface-windows"></i>Login page </a></li>
-          
         </nav>
