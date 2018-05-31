@@ -73,3 +73,5 @@
                                 <td col width="180" align="left"><?php echo $row['email']; ?></td>
                                 <td align="left"><?php echo $row['no_hp']; ?></td>     
                             </tr>
+
+                            <?php endfor; ?>
