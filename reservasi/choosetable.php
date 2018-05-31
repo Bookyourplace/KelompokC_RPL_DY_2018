@@ -113,7 +113,7 @@
 											echo '<tr>';
 										}
 									?>
-										<td name="tabel1"><input type="checkbox" name="meja[]" value="1"> <?php echo $row['id_meja']; ?></td>
+										<td name="tabel1" <?php echo $total['total'] != 0 ? "style='background:#f2f2f2'" : ""; ?>>
 									<?php
 										if($i % 5 == 0){
 											echo '</tr><tr>';
