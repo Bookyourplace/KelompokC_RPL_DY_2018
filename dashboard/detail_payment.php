@@ -95,3 +95,5 @@
                                 <td><?php echo $row["nama_menu"]; ?></td>
                                 <td>Rp <?php echo str_replace(",", ".", number_format($row['harga_pesanan_persatuan'])); ?></td>
                                 <td><?php echo $row['quant'] ?></td>
+                                <td>Rp <?php echo str_replace(",", ".", number_format($row['amount'])) ?></td>
+                            
