@@ -81,3 +81,6 @@
                             <td align="center"><?php echo $row['username']; ?></td>
                             <td align="center"><?php echo $row['id_pesanan']; ?></td>
                             <td align="center">
+                            <?php while ($table = mysqli_fetch_assoc($tables)) {
+                                echo "$table[id_meja],";
+                            } ?>
