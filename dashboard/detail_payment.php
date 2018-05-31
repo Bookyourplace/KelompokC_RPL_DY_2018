@@ -69,3 +69,14 @@
                         <h1>Pesanan <?php echo $id_pesanan; ?></h1>
                         <br>
                     </div>
+
+                    <table class="table" align="center" border="5" cellpadding="3" width="70%">
+                    <thead>
+                    <tr align="center" height="80">
+                    <th>No</th>
+                    <th>Orders</th>
+                    <th>Price</th>
+                    <th>Quant</th>
+                    <th>Amount</th>
+                    </tr>
+                    </thead>
