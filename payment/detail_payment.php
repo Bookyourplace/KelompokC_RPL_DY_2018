@@ -61,6 +61,7 @@
 
                    <tr>
                       <?php 
+                      error_reporting(0);
                       $harga= $rs['quant'] * $rs['harga_pesanan_persatuan'];
                       $total= $total + $harga; 
                       ?>
