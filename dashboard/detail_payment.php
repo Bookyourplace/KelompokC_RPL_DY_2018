@@ -16,3 +16,8 @@
 
             header("Location: confirm_payment.php?notif=1");
         }
+
+        if(!isset($_GET['id_pesanan']))
+        header('Location:' . $config['site_url'] . 'dashboard/confirm_payment.php');
+
+        $id_pesanan = $_GET['id_pesanan'];
