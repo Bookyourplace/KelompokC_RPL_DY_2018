@@ -68,3 +68,11 @@
                       <td style="text-align: left;"><?php echo $rs['nama_menu']; ?></td>
                       <td style="text-align: left;"><?php echo $rs['quant']; ?></td>
                       <td style="text-align: left;"><?php echo $harga; ?></td>
+                    </tr>
+
+                    <?php
+                    }
+                    ?>
+
+                    <tr>
+                    <td colspan="3" style="text-align:right">Total</td>
