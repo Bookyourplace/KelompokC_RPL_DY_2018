@@ -58,6 +58,7 @@
                       <tr align="center" height="50">
                       <th>No</th>
                       <th>Username</th>
-                      <th>email</th>        
+                      <th>email</th>
+                      <th style="width:50px">No Hp</th>        
                       </tr>
                   </thead>
