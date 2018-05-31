@@ -15,3 +15,5 @@
 
     <body>
   <div class="page">
+  <!--header-->
+  <?php include '../includes/admin/header.php'?>
