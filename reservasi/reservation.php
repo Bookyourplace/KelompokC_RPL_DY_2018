@@ -2,12 +2,11 @@
   //session_start();
   include '../konfig/cek_belum_login.php';
   include "../konfig/config.php";
- 
 
   // jika ada post submit ada
   if(isset($_POST['submit'])){
 	$_SESSION['book_table'] = $_POST; // masukkan data post dari user ke dalam session book table
-	header('Location: ' . $config['site_url'] . 'reservasi/choosetable.php'); // redirect ke halaman choostable
+	header('Location: ' . $config['site_url'] . 'reservasi/choosetable.php?date='.$_POST['date'].'&time='.$_POST['time']); // redirect ke halaman choostable
   }
 ?>
 <!DOCTYPE html>

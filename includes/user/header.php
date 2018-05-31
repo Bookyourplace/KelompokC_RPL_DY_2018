@@ -28,6 +28,10 @@
 								</li>			
 
 								<li>
+									<a href="<?php echo $config['site_url'] ?>payment/record_payment.php">PAYMENT</a>
+								</li>
+
+								<li>
 									<a href="<?php echo $config['site_url'] ?>about/about.php">About</a>
 								</li>
 

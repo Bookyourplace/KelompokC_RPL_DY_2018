@@ -50,8 +50,8 @@
 
 
 <!-- Title Page -->
-    <section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(<?php echo $config['site_url']?>assets/users/images/review1.jpg);">
-		<h2 style= "color:black;" class="tit6 t-center">
+    <section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(<?php echo $config['site_url']?>assets/users/images/review.jpg);">
+		<h2 style= "color:white;" class="tit6 t-center">
 			Customer Review
     </section>
         
@@ -68,12 +68,15 @@
             margin:0 auto;
             margin-top:1px;
             width:250px; 
+            font-family: Monotype Corsiva;
+            font-size: 28px;
+            color: black;
             text-align:center;
             '>{$username}</div>";
             echo "<div style='border: 2px solid rgba(0,0,0,0.8);
             margin:0 auto;
 		    margin-top:1px;
-            width:300px; 
+            width:500px; 
             padding: 15px;
             cursor: pointer;
             background: -webkit-linear-gradient(top, #efefef, #ddd);
@@ -82,6 +85,7 @@
             background: -o-linear-gradient(top, #efefef, #ddd);
             background: linear-gradient(top, #efefef, #ddd);
             color: #333;
+            font-family: cambria;
             '>{$comment}</div><br />";
         }
         
