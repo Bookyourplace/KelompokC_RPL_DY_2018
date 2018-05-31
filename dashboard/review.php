@@ -81,3 +81,5 @@
         <?php endfor; ?>
         </tbody>
         </table></div>
+        <br>
+        <br>
