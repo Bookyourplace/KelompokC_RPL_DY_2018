@@ -75,3 +75,4 @@
                             </tr>
 
                             <?php endfor; ?>
+                            </tbody>
