@@ -47,3 +47,8 @@
                 <div class="container">
                  <table class="table table-hover">
                   <tr>
+                  <th>Table</th>
+                  <th>Orders</th>
+                  <th>Quant</th>
+                  <th>Price</th>
+                  </tr>
