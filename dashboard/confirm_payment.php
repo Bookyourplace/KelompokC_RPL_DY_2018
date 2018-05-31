@@ -9,7 +9,9 @@
         if(isset($_GET['notif']) && $_GET['notif'] == 1)
         echo "<script>alert('Pembayaran Berhasil!');</script>";
 
-        $sql = "SELECT pesanan.*, (select sum(menu_pesanan.harga_pesanan_persatuan * menu_pesanan.quant) from menu_pesanan where menu_pesanan.id_pesanan=pesanan.id_pesanan) total_harga FROM `pesanan`";
+        $sql = "SELECT payment.*, pesanan.*, (select sum(menu_pesanan.harga_pesanan_persatuan * menu_pesanan.quant) from menu_pesanan where menu_pesanan.id_pesanan=pesanan.id_pesanan) total_harga FROM `pesanan` LEFT join payment on payment.id_pesanan=pesanan.id_pesanan where (select sum(menu_pesanan.harga_pesanan_persatuan * menu_pesanan.quant) from menu_pesanan where menu_pesanan.id_pesanan=pesanan.id_pesanan) is NOT NULL and payment.id_pesanan is null";
+        // var_dump($sql);
+        // die();
         $data = mysqli_query($link, $sql);
     ?>
 
