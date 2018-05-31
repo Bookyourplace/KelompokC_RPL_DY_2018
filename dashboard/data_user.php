@@ -67,3 +67,7 @@
                             <?php
                             for ($i = 1; $row = mysqli_fetch_assoc($data); $i++) :
                             ?>
+                            <tr>
+                                <td col width="50" align="center"><?php echo $i; ?></td>
+    
+                            </tr>
