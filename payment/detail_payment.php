@@ -37,3 +37,7 @@
                <span class="tit2 t-center">
                 YOUR
                </span>
+
+               <h3 class="tit3 t-center m-b-35 m-t-2">
+                PAYMENT Detail 
+               </h3>
