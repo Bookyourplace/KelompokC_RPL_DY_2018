@@ -75,3 +75,8 @@
                                 $sql = "select * from book where id_pesanan=$row[id_pesanan]";
                                 $tables = mysqli_query($link, $sql);
                             ?>
+
+                            <tr>
+                            <td align="center"><?php echo $i; ?></td>
+                            <td align="center"><?php echo $row['username']; ?></td>
+                            
