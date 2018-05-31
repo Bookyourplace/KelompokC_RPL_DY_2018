@@ -62,4 +62,7 @@
                    <tr>
                       <?php 
                       $harga= $rs['quant'] * $rs['harga_pesanan_persatuan'];
-                      $total= $total + $harga; ?>
+                      $total= $total + $harga; 
+                      ?>
+                      <td style="text-align: left;"><?php echo $rs['id_meja']; ?></td>
+                      
