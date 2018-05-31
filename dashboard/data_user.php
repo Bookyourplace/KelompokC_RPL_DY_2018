@@ -22,3 +22,5 @@
 
     <!--sidebar-->
     <?php include '../includes/admin/sidebar.php'?>
+
+    <div class="content-inner">
