@@ -25,7 +25,7 @@
     </head>
 
     <body>
-  <div class="page">
+    <div class="page">
     <!--header-->
     <?php include '../includes/admin/header.php'?>
 
@@ -41,12 +41,12 @@
           <h2 class="no-margin-bottom">Semua Review</h2>
            
         </div>
-      </header>
+    </header>
             
-          <!-- Breadcrumb-->
+    <!-- Breadcrumb-->
           <div class="breadcrumb-holder container-fluid">
             <ul class="breadcrumb">
               <li class="breadcrumb-item"><a href="index.php">Home</a></li>
               <li class="breadcrumb-item active">Semua Review           </li>
             </ul>
-      </div>   
+    </div>   
