@@ -46,3 +46,16 @@
                     </ul>
                 </div>
                 <br>
+
+                <div>
+                    <table align="center" border="5"  cellpadding="3" style="width:80%">
+                        <thead>
+                            <tr align="center" height="80">
+                            <th>No</th>
+                            <th>Nama</th>
+                            <th>Id Pesanan</th>
+                            <th>Id Meja</th>
+                            <th>Total Harga</th>
+                            <th style="width:100px; text-align:center">Aksi</th>
+                            </tr>
+                        </thead>
