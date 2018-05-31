@@ -105,7 +105,8 @@
 								  for ($i = 1; $row = mysqli_fetch_assoc($data); $i++) :
 									$date_format = $date->format('Y-m-d');
 									$sql = "SELECT COUNT(*) as total FROM `book` JOIN pesanan on pesanan.id_pesanan = book.id_pesanan where id_meja = $row[id_meja] and date='$date_format' and time='$time'";
-									
+									$total = mysqli_query($link, $sql);
+									$total = mysqli_fetch_assoc($total);
 							?>
 							<?php
           						for ($i = 1; $row = mysqli_fetch_assoc($data); $i++) :
