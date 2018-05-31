@@ -1,14 +1,24 @@
 <?php 
-	//session_start();
+	// session_start();	
 	include '../konfig/cek_belum_login.php';
 	include "../konfig/config.php";
+	include "../konfig/koneksi.php";
 	
 	// jika session book table tidak ada, bisa jadi user masuk langsung dengan cara ketik URL ke halaman choosetable dari browser
 	// bukan dengan cara isi form di halaman reservasi
-	if(!isset($_SESSION['book_table'])){
+	if(!isset($_GET['date']) || !isset($_GET['time'])){
 		header('Location: ' . $config['site_url'] . 'reservasi/reservation.php'); // redirect user ke halaman reservasi agar isi reservasi dulu
 	}
 
+	$date = $_GET['date'];
+	$time = $_GET['time'];
+
+	$_SESSION['book_table']['date'] = $date;
+	$_SESSION['book_table']['time'] = $time;
+
+	$sql = "SELECT * FROM meja";
+	$data = mysqli_query($link, $sql);
+	  
 	// jika ada post submit ada
 	if(isset($_POST['submit'])){
 		$_SESSION['choose_table'] = $_POST; // masukkan data post dari user ke dalam session choose table
@@ -75,20 +85,49 @@
 						<h3 class="tit3 t-center m-b-35 m-t-2">
 							Choose Table
 						</h3>
+						<div class="tit2 t-center" style="font-size: 25px" >
+							<!-- <table> -->
+								<!-- <tr> -->
+									Date <?php echo $date ?><br>
+									
+									Time <?php echo $time ?>
+								<!-- </tr> -->
+							<!-- </table> -->
+						</div>
 					</div>
+	</section>
 
     
-   <div class="container">
+   	<div class="container">
 		 		<form method="post">
 							<table class = "tabel">
-									<tr>
-									  <td name="tabel1"><input type="checkbox" name="meja[]" value="1"> 1</td>
-									  <td name="tabel2"><input type="checkbox" name="meja[]" value="2"> 2</td>
-									  <td name="tabel3"><input type="checkbox" name="meja[]" value="3"> 3</td>
-									  <td name="tabel4"><input type="checkbox" name="meja[]" value="4"> 4</td>
-									  <td name="tabel5"><input type="checkbox" name="meja[]" value="5"> 5</td>
-									</tr>
-									<tr>
+							<?php
+								  $date = DateTime::createFromFormat('d/m/Y', $date);
+								  for ($i = 1; $row = mysqli_fetch_assoc($data); $i++) :
+									$date_format = $date->format('Y-m-d');
+									$sql = "SELECT COUNT(*) as total FROM `book` JOIN pesanan on pesanan.id_pesanan = book.id_pesanan where id_meja = $row[id_meja] and date='$date_format' and time='$time'";
+									$total = mysqli_query($link, $sql);
+									$total = mysqli_fetch_assoc($total);
+							?>
+								<?php
+									if($i == 0){
+										echo '<tr>';
+									}
+								?>
+									  <td name="tabel1" <?php echo $total['total'] != 0 ? "style='background:#f2f2f2'" : ""; ?>>
+									  	<input type="radio" name="meja[]" value="<?php echo $row['id_meja']; ?>" <?php echo $total['total'] != 0 ? "disabled" : ""; ?>> <?php echo $row['id_meja']; ?>
+									  </td>
+								<?php
+									if($i % 5 == 0){
+										echo '</tr><tr>';
+									}
+								?>
+									  <!-- <td name="tabel2"><input type="checkbox" name="meja[]" value="2"> <?php echo $i; ?></td> -->
+									  <!-- <td name="tabel3"><input type="checkbox" name="meja[]" value="3"> <?php echo $i; ?></td> -->
+									  <!-- <td name="tabel4"><input type="checkbox" name="meja[]" value="4"> <?php echo $i; ?></td> -->
+									  <!-- <td name="tabel5"><input type="checkbox" name="meja[]" value="5"> <?php echo $i; ?></td> -->
+									<!-- </tr> -->
+									<!-- <tr>
 									  <td name="tabel6"><input type="checkbox" name="meja[]" value="6"> 6</td>
 									  <td name="tabel7"><input type="checkbox" name="meja[]" value="7"> 7</td>
 									  <td name="tabel8"><input type="checkbox" name="meja[]" value="8"> 8</td>
@@ -140,7 +179,9 @@
 									  <td name="tabel39"><input type="checkbox" name="meja[]" value="39"> 39</td>
 									  <td name="tabel40"><input type="checkbox" name="meja[]" value="40"> 40</td>
 									</tr>
-									  
+									   -->
+								  <?php endfor; ?>
+								  <?php echo '</tr>'; ?>
 								</table>
 								<div class="wrap-btn-booking flex-c-m m-t-6">
 									<!-- Button3 -->

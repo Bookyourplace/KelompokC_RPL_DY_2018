@@ -47,7 +47,7 @@
 			$qty = $_POST['qty'][$value];
 			$harga = $_POST['harga'][$value];
 
-			$sql = "INSERT INTO menu_pesanan(id_pesanan, id_menu, quant, harga_pesanan_persatuan) VALUES ($id_pesanan, $value, $qty, $harga)"; //masukkan data pesanan ke dalam database
+			$sql = "INSERT INTO menu_pesanan(id_pesanan, id_menu, quant, harga_pesanan_persatuan) VALUES ($id_pesanan, $value, $qty, $harga)";
 			$status = $link->query($sql) or die("menu" . mysqli_error($link));
 		  }
 	 }
@@ -57,6 +57,7 @@
 	 unset($_SESSION['choose_table']);
 
 	 echo "<script>alert('Booking berhasil.')</script>";
+	 header("Location:" . $config['site_url'] . 'payment/record_payment.php');
 	}else
 		echo 'gagal';
 }
