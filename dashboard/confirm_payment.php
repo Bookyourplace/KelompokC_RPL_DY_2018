@@ -89,3 +89,11 @@
                             <td align="center">
                                 <button class="btn btn-default"><a href="detail_payment.php?id_pesanan=<?php echo $row["id_pesanan"] ?>">Detail</a></button>
                             </td>
+
+                             </tr>
+
+                            <?php endfor; ?>
+                        </tbody>
+                    </table>
+                 </div>
+<br>
