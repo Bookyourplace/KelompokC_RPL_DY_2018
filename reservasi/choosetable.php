@@ -108,21 +108,18 @@
 									$total = mysqli_query($link, $sql);
 									$total = mysqli_fetch_assoc($total);
 							?>
-							<?php
-          						for ($i = 1; $row = mysqli_fetch_assoc($data); $i++) :
-							?>
-								<?php
-									if($i == 0){
-										echo '<tr>';
-									}
-								?>
-									  <td name="tabel1"><input type="checkbox" name="meja[]" value="1"> <?php echo $row['id_meja']; ?></td>
-								<?php
-									if($i % 5 == 0){
-										echo '</tr><tr>';
-									}
-								?>
-									 
+									<?php
+										if($i == 0){
+											echo '<tr>';
+										}
+									?>
+										<td name="tabel1"><input type="checkbox" name="meja[]" value="1"> <?php echo $row['id_meja']; ?></td>
+									<?php
+										if($i % 5 == 0){
+											echo '</tr><tr>';
+										}
+									?>
+										
 								  <?php endfor; ?>
 								  <?php echo '</tr>'; ?>
 								</table>
