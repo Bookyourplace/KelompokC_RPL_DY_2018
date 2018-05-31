@@ -84,3 +84,6 @@
                             <?php while ($table = mysqli_fetch_assoc($tables)) {
                                 echo "$table[id_meja],";
                             } ?>
+                            </td>
+                            <td align="center"><?php echo $row['total_harga'] ? "Rp " . str_replace(",", ".", number_format($row['total_harga'])) : '-'; ?></td>
+                            <td align="center">
