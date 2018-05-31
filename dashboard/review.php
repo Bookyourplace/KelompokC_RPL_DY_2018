@@ -81,10 +81,11 @@
         <?php endfor; ?>
         </tbody>
         </table></div>
-        <br>
-        <br>
-        <div><table border="1" style="width:100%">
-        <?php include '../includes/admin/footer.php'?>
+            <br>
+            <br>
+            <div><table border="1" style="width:100%">
+
+    <?php include '../includes/admin/footer.php'?>
         </div>
   </div>
 </div>
