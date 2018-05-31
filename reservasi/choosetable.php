@@ -13,6 +13,9 @@
 	$date = $_GET['date'];
 	$time = $_GET['time'];
 	
+	$_SESSION['book_table']['date'] = $date;
+	$_SESSION['book_table']['time'] = $time;
+
 	$sql = "SELECT * FROM meja";
 	$data = mysqli_query($link, $sql);
 	  
