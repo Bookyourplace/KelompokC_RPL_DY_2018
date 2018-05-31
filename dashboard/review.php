@@ -80,3 +80,4 @@
 
         <?php endfor; ?>
         </tbody>
+        </table></div>
