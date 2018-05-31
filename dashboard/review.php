@@ -50,3 +50,10 @@
               <li class="breadcrumb-item active">Semua Review           </li>
             </ul>
     </div>   
+
+    <?php
+        if (isset($_SESSION['status_proses'])) {
+          echo "<div><strong>$_SESSION[status_proses]</strong></div>";
+          unset($_SESSION['status_proses']);
+        }
+      ?>
