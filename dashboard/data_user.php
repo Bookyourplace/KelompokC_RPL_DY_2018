@@ -24,3 +24,5 @@
     <?php include '../includes/admin/sidebar.php'?>
 
     <div class="content-inner">
+    <!-- page header-->
+      <header class="page-header">
