@@ -10,6 +10,9 @@
 		header('Location: ' . $config['site_url'] . 'reservasi/reservation.php'); // redirect user ke halaman reservasi agar isi reservasi dulu
 	}
 
+	$date = $_GET['date'];
+	$time = $_GET['time'];
+	
 	$sql = "SELECT * FROM meja";
 	$data = mysqli_query($link, $sql);
 	  
