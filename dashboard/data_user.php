@@ -29,4 +29,12 @@
             <div class="container-fluid">
                 <h2 class="no-margin-bottom">Semua User</h2>
             </div>   
-            </header> 
+        </header>
+        
+        <!-- Breadcrumb-->
+      <div class="breadcrumb-holder container-fluid">
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+              <li class="breadcrumb-item active">Semua User           </li>
+            </ul>
+      </div> 
