@@ -57,6 +57,7 @@
 	 unset($_SESSION['choose_table']);
 
 	 echo "<script>alert('Booking berhasil.')</script>";
+	 header("Location:" . $config['site_url'] . 'payment/record_payment.php');
 	}else
 		echo 'gagal';
 }
