@@ -69,5 +69,6 @@
                             ?>
                             <tr>
                                 <td col width="50" align="center"><?php echo $i; ?></td>
-    
+                                <td col width="180" align="left"><?php echo $row['username']; ?></td>
+     
                             </tr>
