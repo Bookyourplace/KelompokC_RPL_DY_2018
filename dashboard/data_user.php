@@ -11,3 +11,4 @@
 
     <!--css-->
     <?php include '../includes/admin/css.php'; ?>
+    </head>
