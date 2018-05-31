@@ -87,5 +87,5 @@
                             </td>
                             <td align="center"><?php echo $row['total_harga'] ? "Rp " . str_replace(",", ".", number_format($row['total_harga'])) : '-'; ?></td>
                             <td align="center">
-                                <button class="btn btn-default"><a href="detail_paymentphp?id_pesanan=<?php echo $row["id_pesanan"] ?>">Detail</a></button>
+                                <button class="btn btn-default"><a href="detail_payment.php?id_pesanan=<?php echo $row["id_pesanan"] ?>">Detail</a></button>
                             </td>
