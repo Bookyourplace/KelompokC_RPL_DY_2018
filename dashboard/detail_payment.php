@@ -140,3 +140,6 @@
         var kembalian = yangDibayar - totalHarga;
         $('input[name=kembalian]').val(kembalian);
     }
+</script>
+</body>
+</html>
