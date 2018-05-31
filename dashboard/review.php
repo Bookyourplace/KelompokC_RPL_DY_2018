@@ -77,3 +77,6 @@
           <td col width="180" align="left"><?php echo $row['username']; ?></td> 
           <td align="left"><?php echo $row['comment']; ?></td>         
         </tr>
+
+        <?php endfor; ?>
+        </tbody>
