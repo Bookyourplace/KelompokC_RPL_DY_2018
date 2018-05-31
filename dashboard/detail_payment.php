@@ -118,3 +118,7 @@
                                     <label for="yang-dibayar">Yang Dibayar</label>
                                     <input type="text" onkeyup="updateKembalian()" name="yang_dibayar" class="form-control" id="yang-dibayar">
                                 </div>
+                                <div class="form-group">
+                                    <label for="kembalian">Kembalian</label>
+                                    <input type="text" name="kembalian" class="form-control" id="exampleInputPassword1" disabled>
+                                </div>
