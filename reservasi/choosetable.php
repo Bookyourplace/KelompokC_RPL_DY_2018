@@ -85,10 +85,10 @@
 						<h3 class="tit3 t-center m-b-35 m-t-2">
 							Choose Table
 						</h3>
-						<div class="tit2 t-center" style="font-size: 16px" >
+						<div class="tit2 t-center" style="font-size: 25px" >
 							<!-- <table> -->
 								<!-- <tr> -->
-									Date <?php echo $date ?>
+									Date <?php echo $date ?><br>
 									
 									Time <?php echo $time ?>
 								<!-- </tr> -->
