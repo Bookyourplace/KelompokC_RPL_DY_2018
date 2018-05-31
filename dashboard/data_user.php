@@ -19,3 +19,6 @@
     <?php include '../includes/admin/header.php'?>
 
     <div class="page-content d-flex align-items-stretch"> 
+
+    <!--sidebar-->
+    <?php include '../includes/admin/sidebar.php'?>
