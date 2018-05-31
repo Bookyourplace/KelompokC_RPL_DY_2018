@@ -114,6 +114,8 @@
 										}
 									?>
 										<td name="tabel1" <?php echo $total['total'] != 0 ? "style='background:#f2f2f2'" : ""; ?>>
+											<input type="radio" name="meja[]" value="<?php echo $row['id_meja']; ?>" <?php echo $total['total'] != 0 ? "disabled" : ""; ?>> <?php echo $row['id_meja']; ?>
+										</td>
 									<?php
 										if($i % 5 == 0){
 											echo '</tr><tr>';
