@@ -44,4 +44,5 @@
       <?php
       if (isset($_SESSION['status_proses'])) {
         echo "<div><strong>$_SESSION[status_proses]</strong></div>";
+        unset($_SESSION['status_proses']);
       ?>
