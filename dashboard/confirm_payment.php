@@ -40,6 +40,13 @@
         
              <div class="content-inner">
 
+             <!-- page header-->
+             <header class="page-header">
+                    <div class="container-fluid">
+                        <h2 class="no-margin-bottom">Konfirmasi Pembayaran</h2>
+                    </div>
+                </header>
+
              <!-- Breadcrumb-->
              <div class="breadcrumb-holder container-fluid">
                     <ul class="breadcrumb">
