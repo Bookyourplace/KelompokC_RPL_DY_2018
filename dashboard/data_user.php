@@ -76,3 +76,4 @@
 
                             <?php endfor; ?>
                             </tbody>
+                        </table>
