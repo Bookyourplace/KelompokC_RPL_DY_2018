@@ -6,14 +6,14 @@
     if (!isset($_SESSION['login_user']))
         header('Location:../login.php');
 
-        if(isset($_GET['notif']) && $_GET['notif'] == 1)
+    if(isset($_GET['notif']) && $_GET['notif'] == 1)
         echo "<script>alert('Pembayaran Berhasil!');</script>";
 
-        $sql = "SELECT payment.*, pesanan.*, (select sum(menu_pesanan.harga_pesanan_persatuan * menu_pesanan.quant) from menu_pesanan where menu_pesanan.id_pesanan=pesanan.id_pesanan) total_harga FROM `pesanan` LEFT join payment on payment.id_pesanan=pesanan.id_pesanan where (select sum(menu_pesanan.harga_pesanan_persatuan * menu_pesanan.quant) from menu_pesanan where menu_pesanan.id_pesanan=pesanan.id_pesanan) is NOT NULL and payment.id_pesanan is null";
-        // var_dump($sql);
-        // die();
-        $data = mysqli_query($link, $sql);
-    ?>
+    $sql = "SELECT payment.*, pesanan.*, (select sum(menu_pesanan.harga_pesanan_persatuan * menu_pesanan.quant) from menu_pesanan where menu_pesanan.id_pesanan=pesanan.id_pesanan) total_harga FROM `pesanan` LEFT join payment on payment.id_pesanan=pesanan.id_pesanan where (select sum(menu_pesanan.harga_pesanan_persatuan * menu_pesanan.quant) from menu_pesanan where menu_pesanan.id_pesanan=pesanan.id_pesanan) is NOT NULL and payment.id_pesanan is null";
+    // var_dump($sql);
+    // die();
+    $data = mysqli_query($link, $sql);
+?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -25,30 +25,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="robots" content="all,follow">
 
+
         <!--css-->
         <?php include '../includes/admin/css.php'; ?>
     </head>
-
+ 
     <body>
     <div class="page">
             <!--header-->
             <?php include '../includes/admin/header.php'?>
 
-            <div class="page-content d-flex align-items-stretch">
-             <!--sidebar-->
-             <?php include '../includes/admin/sidebar.php'?>
-        
-             <div class="content-inner">
+            <div class="page-content d-flex align-items-stretch"> 
 
-             <!-- page header-->
-             <header class="page-header">
+            <!--sidebar-->
+            <?php include '../includes/admin/sidebar.php'?>
+        
+            <div class="content-inner">
+                <!-- page header-->
+                <header class="page-header">
                     <div class="container-fluid">
                         <h2 class="no-margin-bottom">Konfirmasi Pembayaran</h2>
                     </div>
                 </header>
 
-             <!-- Breadcrumb-->
-             <div class="breadcrumb-holder container-fluid">
+                <!-- Breadcrumb-->
+                <div class="breadcrumb-holder container-fluid">
                     <ul class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                     <li class="breadcrumb-item active">Pembayaran</li>
@@ -68,8 +69,7 @@
                             <th style="width:100px; text-align:center">Aksi</th>
                             </tr>
                         </thead>
-
-                         <tbody>
+                        <tbody>
                             <?php
                             for ($i = 1; $row = mysqli_fetch_assoc($data); $i++) :
                                 $sql = "select * from book where id_pesanan=$row[id_pesanan]";
@@ -89,16 +89,17 @@
                             <td align="center">
                                 <button class="btn btn-default"><a href="detail_payment.php?id_pesanan=<?php echo $row["id_pesanan"] ?>">Detail</a></button>
                             </td>
-
-                             </tr>
+                                
+                            </tr>
 
                             <?php endfor; ?>
                         </tbody>
                     </table>
-                 </div>
+                </div>
 <br>
+
 
 <?php include '../includes/admin/footer.php'?>
 <?php include '../includes/admin/js.php'?>
 </body>
-</html>      
+</html>                
