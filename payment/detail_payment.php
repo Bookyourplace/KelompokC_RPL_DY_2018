@@ -44,3 +44,6 @@
                 <span class="tit2 t-center">
                     ID Order # <?php echo $_GET['id_order']  ?>
                 </span>
+                <div class="container">
+                 <table class="table table-hover">
+                  <tr>
