@@ -63,3 +63,9 @@
                     </ul>
                 </div>
                 <br>
+
+                <div class="container">
+                    <div class="text-center">
+                        <h1>Pesanan <?php echo $id_pesanan; ?></h1>
+                        <br>
+                    </div>
