@@ -58,3 +58,6 @@
                     $query = mysqli_query($link, $q);
                     while ($rs = mysqli_fetch_array ($query)) {
                    ?>
+
+                   <tr>
+                      <?php 
