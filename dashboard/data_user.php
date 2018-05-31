@@ -84,3 +84,7 @@
     </div>
 
     <?php include '../includes/admin/footer.php'?>
+
+    </div>
+  </div>
+</div>
