@@ -62,3 +62,8 @@
                       <th style="width:50px">No Hp</th>        
                       </tr>
                   </thead>
+
+                  <tbody>
+                            <?php
+                                
+                            ?>
