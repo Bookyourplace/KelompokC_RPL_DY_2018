@@ -6,21 +6,21 @@
     if (!isset($_SESSION['login_user']))
         header('Location:../login.php');
 
-        if(isset($_POST['submit'])){
-            $id_pesanan = $_GET['id_pesanan'];
-            $total = $_POST['total'];
-            //$yang_dibayar = $_POST['yang_dibayar'];
+    if(isset($_POST['submit'])){
+        $id_pesanan = $_GET['id_pesanan'];
+        $total = $_POST['total'];
+        // $yang_dibayar = $_POST['yang_dibayar'];
 
-            $sql = "insert into payment(id_pesanan, total_harga) values($id_pesanan, $total)";
-            $data = mysqli_query($link, $sql);
+        $sql = "insert into payment(id_pesanan, total_harga) values($id_pesanan, $total)";
+        $data = mysqli_query($link, $sql);
 
-            header("Location: confirm_payment.php?notif=1");
-        }
+        header("Location: confirm_payment.php?notif=1");
+    }
 
-        if(!isset($_GET['id_pesanan']))
+    if(!isset($_GET['id_pesanan']))
         header('Location:' . $config['site_url'] . 'dashboard/confirm_payment.php');
 
-        $id_pesanan = $_GET['id_pesanan'];
+    $id_pesanan = $_GET['id_pesanan'];
 ?>
 
 <!DOCTYPE html>
@@ -33,10 +33,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="robots" content="all,follow">
 
+
         <!--css-->
         <?php include '../includes/admin/css.php'; ?>
     </head>
-
+ 
     <body>
     <div class="page">
             <!--header-->
@@ -46,7 +47,7 @@
 
             <!--sidebar-->
             <?php include '../includes/admin/sidebar.php'?>
-
+        
             <div class="content-inner">
                 <!-- page header-->
                 <header class="page-header">
@@ -80,7 +81,6 @@
                     <th>Amount</th>
                     </tr>
                     </thead>
-
                     <tbody>
                         <?php
                             $sql = "SELECT menu_pesanan.quant, menu_pesanan.harga_pesanan_persatuan, menu.nama_menu, (menu_pesanan.quant * menu_pesanan.harga_pesanan_persatuan) as amount FROM `menu_pesanan` join menu on menu.id_menu = menu_pesanan.id_menu where id_pesanan = $id_pesanan";
@@ -90,13 +90,13 @@
                             for ($i=1; $row = mysqli_fetch_assoc($data); $i++) {
                                 $total += $row['amount'];
                         ?>
-                        <tr>
+                            <tr>
                                 <td align="center"><?php echo $i; ?>.</td>
                                 <td><?php echo $row["nama_menu"]; ?></td>
                                 <td>Rp <?php echo str_replace(",", ".", number_format($row['harga_pesanan_persatuan'])); ?></td>
                                 <td><?php echo $row['quant'] ?></td>
                                 <td>Rp <?php echo str_replace(",", ".", number_format($row['amount'])) ?></td>
-                                </tr>
+                            </tr>
                         <?php
                             }
                         ?>
@@ -122,6 +122,7 @@
                                     <label for="kembalian">Kembalian</label>
                                     <input type="text" name="kembalian" class="form-control" id="exampleInputPassword1" disabled>
                                 </div>
+
                                 <div class="text-right">
                                     <button type="submit" name="submit" class="btn btn-primary">Bayar</button>
                                 </div>
@@ -129,6 +130,7 @@
                         </div>
                     </div>
                 </div>
+
 <br>
 <?php include '../includes/admin/footer.php'?>
 <?php include '../includes/admin/js.php'?>
