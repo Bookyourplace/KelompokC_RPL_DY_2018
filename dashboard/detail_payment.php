@@ -104,3 +104,13 @@
                         
                     </tbody>
                     </table>
+
+                    <div class="row">
+                        <div class="col-md-8"></div>
+                        <div class="col-md-4">
+                            <form method="post">
+                                <div class="form-group">
+                                    <label for="total-yang-harus-dibayar">Total Yang Harus Dibayar</label>
+                                    <input type="hidden" name="total" value="<?php echo $total ?>">
+                                    <input type="text" name="total_yang_harus_dibayar" value="<?php echo $total ?>" class="form-control" id="total-yang-harus-dibayar" disabled>
+                                </div>
