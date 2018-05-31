@@ -17,3 +17,7 @@
     <?php include '../includes/user/css.php'?>
 
 </head>
+
+<body>
+
+<?php include '../includes/user/header.php'?>
