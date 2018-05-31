@@ -51,7 +51,7 @@
 
 <!-- Title Page -->
     <section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(<?php echo $config['site_url']?>assets/users/images/review.jpg);">
-		<h2 style= "color:black;" class="tit6 t-center">
+		<h2 style= "color:white;" class="tit6 t-center">
 			Customer Review
     </section>
         
