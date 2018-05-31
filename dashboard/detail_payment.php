@@ -137,3 +137,4 @@
     function updateKembalian(){
         var totalHarga = <?php echo $total ?>;
         var yangDibayar = $('input[name=yang_dibayar]').val();
+        var kembalian = yangDibayar - totalHarga;
