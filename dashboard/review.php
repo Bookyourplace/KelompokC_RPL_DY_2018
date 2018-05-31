@@ -74,5 +74,6 @@
         
         <tr style="background-color: #C3DBC5;">
           <td col width="50" align="center"><?php echo $i; ?></td>
-          <td col width="180" align="left"><?php echo $row['username']; ?></td>     
+          <td col width="180" align="left"><?php echo $row['username']; ?></td> 
+          <td align="left"><?php echo $row['comment']; ?></td>         
         </tr>
