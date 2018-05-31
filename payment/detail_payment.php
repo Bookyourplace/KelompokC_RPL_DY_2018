@@ -65,4 +65,5 @@
                       $total= $total + $harga; 
                       ?>
                       <td style="text-align: left;"><?php echo $rs['id_meja']; ?></td>
+                      <td style="text-align: left;"><?php echo $rs['nama_menu']; ?></td>
                       
