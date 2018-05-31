@@ -46,3 +46,10 @@
         echo "<div><strong>$_SESSION[status_proses]</strong></div>";
         unset($_SESSION['status_proses']);
       ?>
+
+      <div class="container-fluid" align="center" style="width:70%" >
+      <div class="row">
+          <div class="col-md-12" style="margin:0 auto">
+              <div class="card">
+                  <div class="card-body">
+                      <table class="table" >
