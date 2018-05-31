@@ -13,3 +13,6 @@
 
             $sql = "insert into payment(id_pesanan, total_harga) values($id_pesanan, $total)";
             $data = mysqli_query($link, $sql);
+
+            header("Location: confirm_payment.php?notif=1");
+        }
