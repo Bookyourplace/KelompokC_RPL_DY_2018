@@ -135,3 +135,4 @@
 
 <script>
     function updateKembalian(){
+        var totalHarga = <?php echo $total ?>;
