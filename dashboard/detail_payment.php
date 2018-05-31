@@ -90,3 +90,6 @@
                             for ($i=1; $row = mysqli_fetch_assoc($data); $i++) {
                                 $total += $row['amount'];
                         ?>
+                        <tr>
+                                <td align="center"><?php echo $i; ?>.</td>
+                                <td><?php echo $row["nama_menu"]; ?></td>
