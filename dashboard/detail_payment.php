@@ -41,3 +41,5 @@
     <div class="page">
             <!--header-->
             <?php include '../includes/admin/header.php'?>
+
+            <div class="page-content d-flex align-items-stretch"> 
