@@ -63,4 +63,5 @@
         <tr align="center" height="80">
           <th>No</th>
           <th>Username</th>
+          <th>Komentar</th> 
       </thead>
