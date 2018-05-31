@@ -53,3 +53,9 @@
               <div class="card">
                   <div class="card-body">
                       <table class="table" >
+                      <thead>
+                      <br></br><br></br>
+                      <tr align="center" height="50">
+                      <th>No</th>        
+                      </tr>
+                  </thead>
