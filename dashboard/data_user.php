@@ -56,6 +56,7 @@
                       <thead>
                       <br></br><br></br>
                       <tr align="center" height="50">
-                      <th>No</th>        
+                      <th>No</th>
+                      <th>Username</th>        
                       </tr>
                   </thead>
