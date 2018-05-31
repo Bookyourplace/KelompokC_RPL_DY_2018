@@ -97,3 +97,5 @@
                     </table>
                  </div>
 <br>
+
+<?php include '../includes/admin/footer.php'?>
