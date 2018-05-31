@@ -79,4 +79,5 @@
                             <tr>
                             <td align="center"><?php echo $i; ?></td>
                             <td align="center"><?php echo $row['username']; ?></td>
-                            
+                            <td align="center"><?php echo $row['id_pesanan']; ?></td>
+                            <td align="center">
