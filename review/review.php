@@ -68,6 +68,9 @@
             margin:0 auto;
             margin-top:1px;
             width:250px; 
+            font-family: Monotype Corsiva;
+            font-size: 28px;
+            color: black;
             text-align:center;
             '>{$username}</div>";
             echo "<div style='border: 2px solid rgba(0,0,0,0.8);
