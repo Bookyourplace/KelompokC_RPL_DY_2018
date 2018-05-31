@@ -75,5 +75,8 @@
                     ?>
 
                     <tr>
-                    <td colspan="3" style="text-align:right">Total</td>
-                    <td style="text-align:left">
+                        <td colspan="3" style="text-align:right">Total</td>
+                        <td style="text-align:left">
+                        <?php
+                        echo $total;
+                        ?>
