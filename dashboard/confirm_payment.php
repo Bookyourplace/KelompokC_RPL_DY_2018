@@ -68,3 +68,10 @@
                             <th style="width:100px; text-align:center">Aksi</th>
                             </tr>
                         </thead>
+
+                         <tbody>
+                            <?php
+                            for ($i = 1; $row = mysqli_fetch_assoc($data); $i++) :
+                                $sql = "select * from book where id_pesanan=$row[id_pesanan]";
+                                $tables = mysqli_query($link, $sql);
+                            ?>
