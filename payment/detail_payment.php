@@ -41,3 +41,6 @@
                <h3 class="tit3 t-center m-b-35 m-t-2">
                 PAYMENT Detail 
                </h3>
+                <span class="tit2 t-center">
+                    ID Order # <?php echo $_GET['id_order']  ?>
+                </span>
