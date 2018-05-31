@@ -89,7 +89,6 @@
   </div>
 </div>
 
-    <?php include '../includes/admin/js.php'?>
-
+        <?php include '../includes/admin/js.php'?>
     </body>
-    </html>
+</html>
