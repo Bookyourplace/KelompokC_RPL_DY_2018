@@ -70,3 +70,8 @@
         <?php
           for ($i = 1; $row = mysqli_fetch_assoc($data); $i++) :
         ?>
+
+        
+        <tr style="background-color: #C3DBC5;">
+          <td col width="50" align="center"><?php echo $i; ?></td>     
+        </tr>
