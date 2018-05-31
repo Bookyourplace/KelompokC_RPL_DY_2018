@@ -82,6 +82,7 @@
             background: -o-linear-gradient(top, #efefef, #ddd);
             background: linear-gradient(top, #efefef, #ddd);
             color: #333;
+            font-family: cambria;
             '>{$comment}</div><br />";
         }
         
