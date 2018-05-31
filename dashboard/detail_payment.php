@@ -131,3 +131,4 @@
                 </div>
 <br>
 <?php include '../includes/admin/footer.php'?>
+<?php include '../includes/admin/js.php'?>
