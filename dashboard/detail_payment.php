@@ -114,3 +114,7 @@
                                     <input type="hidden" name="total" value="<?php echo $total ?>">
                                     <input type="text" name="total_yang_harus_dibayar" value="<?php echo $total ?>" class="form-control" id="total-yang-harus-dibayar" disabled>
                                 </div>
+                                <div class="form-group">
+                                    <label for="yang-dibayar">Yang Dibayar</label>
+                                    <input type="text" onkeyup="updateKembalian()" name="yang_dibayar" class="form-control" id="yang-dibayar">
+                                </div>
