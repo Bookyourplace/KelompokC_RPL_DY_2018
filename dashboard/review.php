@@ -57,3 +57,9 @@
           unset($_SESSION['status_proses']);
         }
       ?>
+    <div><table align="center" border="1"  cellpadding="3" style="width:60%">
+      <thead>
+        <br></br><br></br>
+        <tr align="center" height="80">
+          <th>No</th>
+      </thead>
