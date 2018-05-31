@@ -2,7 +2,7 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-sm-6">
-                  <p>Your company &copy; 2017-2019</p>
+                  <p>Your company &copy; 2018</p>
                 </div>
                 <div class="col-sm-6 text-right">
                   <p>Design by <a href="#" class="external">BookYourPlace</a></p>
