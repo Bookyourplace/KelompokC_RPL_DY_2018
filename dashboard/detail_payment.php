@@ -60,6 +60,7 @@
                 <div class="breadcrumb-holder container-fluid">
                     <ul class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item"><a href="confirm_payment.php">Pembayaran</a></li>
                     <li class="breadcrumb-item active">Detail Pembayaran</li>
                     </ul>
                 </div>
@@ -124,7 +125,7 @@
                                 </div>
 
                                 <div class="text-right">
-                                    <button type="submit" name="submit" class="btn btn-primary">Bayar</button>
+                                    <button type="submit" name="submit" class="btn btn-primary" style="background-color: #222222ef" >Bayar</button>
                                 </div>
                             </form>
                         </div>
