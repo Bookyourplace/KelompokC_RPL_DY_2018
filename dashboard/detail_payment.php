@@ -125,7 +125,7 @@
                                 </div>
 
                                 <div class="text-right">
-                                    <button type="submit" name="submit" class="btn btn-primary">Bayar</button>
+                                    <button type="submit" name="submit" class="btn btn-primary" style="background-color: #222222ef" >Bayar</button>
                                 </div>
                             </form>
                         </div>
