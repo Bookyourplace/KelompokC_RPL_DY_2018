@@ -73,7 +73,7 @@
 		</h2>
 	</section>
 
-	<section class="section-reservation bg1-pattern p-t-100 p-b-113">
+	<section class="section-reservation bg1-pattern p-t-100 p-b-113" >
 		<div class="">
 			<div class="row">
 				<div class="col-lg-12 p-b-30">
@@ -98,7 +98,7 @@
 	</section>
 
     
-   	<div class="container">
+   	<div class="section-reservation bg1-pattern p-t-1 p-b-20">
 		 		<form method="post">
 							<table class = "tabel">
 							<?php
